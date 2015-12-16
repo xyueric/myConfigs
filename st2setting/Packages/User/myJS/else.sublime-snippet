@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[ else {
+	${0://enter_code}
+}]]></content>
+	<tabTrigger>else</tabTrigger>
+	<scope>source.js</scope>
+	<description>else</description>
+</snippet>

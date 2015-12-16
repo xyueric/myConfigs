@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[-- ${3:description}
+--@function [parent=#${2:module_short_name}] ${1:name}
+--@param self
+]]></content>
+    <tabTrigger>zsfun</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入function注释</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[if (${1:true}) 
+	${0://enter_code}
+]]></content>
+	<tabTrigger>if..single</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>if..single..line</description>
+</snippet>

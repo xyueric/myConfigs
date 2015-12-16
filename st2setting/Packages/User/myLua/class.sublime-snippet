@@ -1,0 +1,29 @@
+<snippet>
+    <content><![CDATA[--[[
+    ${1:className}
+    -- ${3:class_description}
+]]
+
+-- require
+local Log = require("Base/Log") -- #Log
+
+-----------------------------
+
+---@module ${1:className} 
+local ${1:className} = class("${1:className}", ${2:super})
+
+
+--@function [parent=#${1:className}] ctor 
+-- @param self
+function ${1:className}:ctor()
+    $0
+end
+
+
+
+return ${1:className}
+]]></content>
+    <tabTrigger>class</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入 class</description>
+</snippet>

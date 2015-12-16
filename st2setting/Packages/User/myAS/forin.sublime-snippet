@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[for (var ${1:key}:String in ${3:arr}) 
+{
+	${0://enter_code}
+}]]></content>
+	<tabTrigger>forin</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>for..in</description>
+</snippet>

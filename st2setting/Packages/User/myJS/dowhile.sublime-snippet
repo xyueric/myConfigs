@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[do
+{
+	${0://enter_code}
+}while(${1:true});]]></content>
+	<tabTrigger>dowhile</tabTrigger>
+	<scope>source.js</scope>
+	<description>dowhile</description>
+</snippet>

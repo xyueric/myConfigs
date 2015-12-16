@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[//-------------------------------------------------------------------
+//		$1
+//-------------------------------------------------------------------
+$0
+]]></content>
+	<tabTrigger>zs</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>zsLine_长</description>
+</snippet>

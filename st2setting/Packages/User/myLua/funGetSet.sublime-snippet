@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[---${5:description}
+--@function [parent=#${2:class_name}] get${1:func_name}
+--@param self
+function ${2:class_name}:get${1:func_name}()
+    return ${3:value_name}
+end
+---${5:description}
+--@function [parent=#${2:class_name}] set${1:func_name}
+--@param self
+function ${2:class_name}:set${1:func_name}(${4:data})
+    ${3:value_name} = data
+end$0]]></content>
+    <tabTrigger>funcGetSet</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入Get,Set函数</description>
+</snippet>

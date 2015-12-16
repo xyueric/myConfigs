@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+---@module ${1:className} 
+--@extend ${2:}super
+]]></content>
+    <tabTrigger>zs</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入class注释</description>
+</snippet>

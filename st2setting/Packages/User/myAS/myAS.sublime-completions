@@ -1,0 +1,134 @@
+{
+	"scope":"source.actionscript.3",
+
+	"completions":
+	[
+		//my word
+		"destroy", "progress", "enabled", "example", "param", "result",
+		// { "trigger": "target_name", "contents": "target.name;" },
+
+		//---------------------------------------
+		
+		//project work
+		"getIns().", "EventConst",
+		{ "trigger": "PopTipManager()", "contents": "PopTipManager.getIns().addTxtPop(${1:msg});"},
+		{ "trigger": "TipsManager()", "contents": "TipsManager.getIns().addTips(${1:display}, {title:${2:msg}});"},
+		{ "trigger": "NoticeManager.addNotice()", "contents": "NoticeManager.getIns().addNotice(${1:msg}, ${2:foo});" },
+		{ "trigger": "NoticeManager.addOnlySureNotice()", "contents": "NoticeManager.getIns().addNotice(${1:msg}, ${2:foo});" },
+		{ "trigger": "SocketsSendManager.send()", "contents": "SocketsSendManager.getIns().send(new ${1:class}(${2:param}));" },
+
+		{ "trigger": "ConfigManager.getAllData()", "contents": "ConfigManager.getIns().getAllData(${1:file_name});" },
+		{ "trigger": "ConfigManager.getObjectByProperty()", "contents": "ConfigManager.getIns().getObjectByProperty(${1:file_name}, ${2:property}, ${3:propertyValue});" },
+		{ "trigger": "ConfigManager.getConfigById()", "contents": "ConfigManager.getIns().getConfigById(${1:file_name}, ${2:id});" },
+		{ "trigger": "ConfigManager.getCommonValue()", "contents": "ConfigManager.getIns().getCommonValue(${1:key});" },
+		{ "trigger": "ConfigManager.getCommonDungeonValue()", "contents": "ConfigManager.getIns().getCommonDungeonValue(${1:key});" },
+		{ "trigger": "EventManager.dispatchEvent()", "contents": "EventManager.getIns().dispatchEvent(new CommonEvent(EventConst.${1:event_name}, ${2:param}));" },
+		{ "trigger": "EventManager.addEventListener()", "contents": "EventManager.getIns().addEventListener(EventConst.${1:event_name}, ${2:callBack});" },
+		{ "trigger": "getAssetObject();", "contents": "getAssetObject(\"${1:name}\") as ${2:Sprite}," },
+		
+		//---------------------------------------
+		//import
+		{ "trigger": "import_Sprite", "contents": "import flash.display.Sprite;"},
+		{ "trigger": "import_MovieClip", "contents": "import flash.display.MovieClip;"},
+		{ "trigger": "import_Event", "contents": "import flash.events.Event;"},
+		{ "trigger": "import_MouseEvent", "contents": "import flash.events.MouseEvent;"},
+		{ "trigger": "import_KeyboardEvent", "contents": "import flash.events.KeyboardEvent;"},
+		{ "trigger": "import_TimerEvent", "contents": "import flash.events.TimerEvent;"},
+		{ "trigger": "import_TweenLite", "contents": "import com.greensock.TweenLite;"},
+		{ "trigger": "import_Timer", "contents": "import flash.utils.Timer;"},
+		{ "trigger": "import_SimpleButton", "contents": "import flash.display.SimpleButton;"},
+		{ "trigger": "import_Point", "contents": "import flash.geom.Point;"},
+		{ "trigger": "import_utils", "contents": "import flash.utils.*;"},
+
+		//---------------------------------------
+		//key word
+		"this.", "super.", "import ","public", "override", "static", "protected", "private", "const", "parent", "length", "return", "continue;", "break;", "return", "continue;", "break;", "removeEventListener",
+		"CLICK", "ROLL_OUT", "ROLL_OVER", "KEY_UP", "KEY_DOWN", "ENTER_FRAME", "ADDED_TO_STAGE",  
+		"keyCode", "width", "height", "push", "visible", "buttonMode", "mouseChildren", "mouseEnabled", "scaleX", "scaleY",
+
+		//type
+		"null", "Object", "Sprite", "MovieClip", "TextField", "SimpleButton", "Boolean", "Number", "Array", "Vector", "Dictionary", "TextFormat", "MouseEvent", "KeyboardEvent", "TimerEvent",
+	
+		
+		{ "trigger": "Vector()", "contents": "Vector.<${1:type}>" },
+
+		//other
+		{ "trigger": "setInterval()", "contents": "setInterval(${1:foo}, ${2:delay}${3:, arguments});" },
+		{ "trigger": "setTimeout()", "contents": "setTimeout(${1:foo}, ${2:delay}${3:, arguments});" },
+		{ "trigger": "clearInterval()", "contents": "clearInterval(${1:flag});" },
+		{ "trigger": "clearTimeout()", "contents": "clearTimeout(${1:flag});" },
+		
+		//---------------------------------------
+		// a
+		{ "trigger": "args...", "contents": "...args" },
+		{ "trigger": "addEventListener()", "contents": "addEventListener(${1:event}, ${2:function});" },
+		{ "trigger": "addChild()", "contents": "addChild(${1:display});" },
+		{ "trigger": "addChildAt()", "contents": "addChildAt(${1:display}, ${2:deep});" },
+		{ "trigger": "arr_push()", "contents": "push(${1:item});" },
+		{ "trigger": "arr_splice()", "contents": "splice(${1:startIndex}, ${2:deleteCount});" },
+		{ "trigger": "arr_indexOf()", "contents": "indexOf(${1:object});" },
+		{ "trigger": "arr_pop()", "contents": "pop();" },
+		{ "trigger": "arr_shift()", "contents": "shift();" },
+		{ "trigger": "arr_sortOn()", "contents": "sortOn([${1:key}], [${2:Array.NUMERIC}]);" },
+		{ "trigger": "arr_数值（非字符串）排序", "contents": "Array.NUMERIC" },
+		{ "trigger": "arr_降序", "contents": "Array.DESCENDING" },
+		{ "trigger": "arr_不区分大小写", "contents": "Array.CASEINSENSITIVE" },
+		{ "trigger": "arr_唯一排序", "contents": "Array.UNIQUESORT" },
+		{ "trigger": "arr_返回的数组包含数组索引", "contents": "Array.RETURNINDEXEDARRAY" },
+		// b
+		// c
+		{ "trigger": "charAt()", "contents": "charAt(${1:value});" },
+		// d
+		// e
+		// f
+		// g
+		{ "trigger": "gotoAndStop()", "contents": "gotoAndStop(${1:value});" },
+		{ "trigger": "gotoAndPlay()", "contents": "gotoAndPlay(${1:value});" },
+		{ "trigger": "globalToLocal()", "contents": "globalToLocal(${1:point});" },
+		// h
+		{ "trigger": "hasOwnProperty()", "contents": "hasOwnProperty(${1:property});" },
+		// i
+		// j
+		// k
+		// l
+		{ "trigger": "localToGlobal()", "contents": "localToGlobal(${1:point});" },
+		// m
+		{ "trigger": "mc_totalFrames", "contents": "totalFrames" },
+		{ "trigger": "mc_currentFrame", "contents": "currentFrame" },
+		{ "trigger": "math_round()", "contents": "Math.round(${1:value})" },
+		{ "trigger": "math_floor()", "contents": "Math.floor(${1:value})" },
+		{ "trigger": "math_ceil()", "contents": "Math.ceil(${1:value})" },
+		{ "trigger": "math_random()", "contents": "Math.random() * (${1:max} - ${2:min}) + ${2:min}" },
+		// n
+		// o
+		// p
+		{ "trigger": "parseInt()", "contents": "parseInt(${1:value});" },
+		{ "trigger": "parseFloat()", "contents": "parseFloat(${1:value});" },
+		{ "trigger": "play()", "contents": "play();" },
+		// q
+		// r
+		{ "trigger": "removeEventListener()", "contents": "removeEventListener(${1:event}, ${2:function});" },
+		{ "trigger": "removeChild()", "contents": "removeChild(${1:dis});" },
+		{ "trigger": "removeChildAt()", "contents": "removeChildAt(${1:index});" },
+		// s
+		{ "trigger": "str_split()", "contents": "split(\"${1:value}\");" },
+		{ "trigger": "str_substr()", "contents": "substr(${1:start}, ${2:len});" },
+		// t
+		{ "trigger": "trace()", "contents": "trace(\"${1:msg}\", ${2:value});" },
+		{ "trigger": "toString()", "contents": "toString();" },
+		{ "trigger": "toFixed()", "contents": ".toFixed(${1:length});" },
+		{ "trigger": "text=", "contents": "text = ${1:string};" },
+		{ "trigger": "stop()", "contents": "stop();" },
+		// u
+		// v
+		{ "trigger": "visible=", "contents": "visible = ${1:true};" },
+		// w
+		// x
+		// y
+		// z
+
+		//---------------------------------------
+		
+		{}
+	]
+}

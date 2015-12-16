@@ -1,0 +1,26 @@
+[
+   // { "keys": ["ctrl+alt+f"], "command": "reindent" },
+   {
+      "keys": ["ctrl+alt+f"],
+      "command": "js_format",
+      "context": [{
+         "key": "selector",
+         "operator": "equal",
+         "operand": "source.js,source.json"
+      }]
+   }, {
+      "keys": ["ctrl+alt+n"],
+      "command": "sublime_tmpl",
+      "args": {
+         "type": "as"
+      }
+   }, {
+      "keys": ["ctrl+k", "ctrl+t"],
+      "command": "title_case"
+   }, {
+      "keys": ["ctrl+shift+v"],
+      "command": "clipboard_manager_choose_and_paste"
+   },
+
+   {}
+]

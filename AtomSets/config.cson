@@ -1,0 +1,59 @@
+"*":
+  "exception-reporting":
+    userId: "7807a589-b7e3-4314-7d2f-b6a601c48c78"
+  welcome:
+    showOnStartup: false
+  core:
+    projectHome: "E:\\Working\\st_project"
+    ignoredNames: [
+      ".fla"
+      ".swf"
+      ".swc"
+    ]
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+    disabledPackages: [
+      "language-javascript-jsx"
+      "activate-power-mode"
+      "docblockr"
+      "background-tips"
+      "bookmarks"
+      "javascript-snippets"
+      "language-actionscript3"
+      "minimap"
+    ]
+    autoHideMenuBar: true
+  editor:
+    invisibles: {}
+    autoIndentOnPaste: false
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+    fontFamily: "Ubuntu Mono"
+    lineHeight: 1
+    showIndentGuide: true
+    softWrapHangingIndent: 2
+    zoomFontWhenCtrlScrolling: false
+  "one-dark-ui": {}
+  "clipboard-plus": {}
+  "linter-jshint": {}
+  "nuclide-format-js": {}
+  "atom-beautify":
+    language_haskell_beautify_on_save: true
+    _analyticsUserId: "86900445-3c60-42f9-b3e5-2f187432ea6f"
+  docblockr: {}
+  "isotope-ui": {}
+  "sync-settings":
+    _analyticsUserId: "98f3eee6-da29-4908-a40b-7851fefc6cd0"
+    personalAccessToken: "7b5d29fe3d8d32ead77f39d02d7e7bc1f4bd7672"
+    gistId: "8a9dec5099fd822611f1"
+    _lastBackupHash: "57231ad51b9a8e48ac8bc18cf35c788098b98805"
+  "atom-alignment": {}
+  minimap:
+    scrollAnimation: true
+    absoluteMode: true
+".ini.source":
+  editor:
+    tabLength: 4

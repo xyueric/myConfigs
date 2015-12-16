@@ -1,0 +1,242 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+".source.js":
+#####################################################################
+#####################################################################
+  "new class":
+    "prefix": "class"
+    "body": """
+/**
+ * Created by EricHsu
+ *
+ * ${1:class_name}
+ * ${4:[class description]}
+ */
+${1:class_name} = cc.${2:Class}.extend({
+    ctor: function(${3:args}) {
+        this._super();
+        this.initFoo(${3:args});
+    }
+});
+var classSelf = ${1:class_name}.prototype;
+//-------------------------------------------------------------------
+//        main
+//-------------------------------------------------------------------
+
+/**
+ * 初始化
+ */
+classSelf.initFoo = function (${3:args}) {
+    
+};
+
+/**
+ * 销毁
+ */
+classSelf.destroy = function() {
+    
+};
+
+
+
+//-------------------------------------------------------------------
+delete classSelf;
+"""
+#####################################################################
+  "classSelf.function":
+     "prefix": "func"
+     "body": """
+/**
+ * ${3:description}
+ */
+classSelf.${1:function_name} = function(${2:args}) {
+  ${0}
+};
+
+"""
+#####################################################################
+#####################################################################
+  "destroy":
+     "prefix": "destroy"
+     "body": "destroy"
+  "progress":
+     "prefix": "progress"
+     "body": "progress"
+  "enabled":
+     "prefix": "enabled"
+     "body": "enabled"
+  "example":
+     "prefix": "example"
+     "body": "example"
+  "param":
+     "prefix": "param"
+     "body": "param"
+  "result":
+     "prefix": "result"
+     "body": "result"
+  "director":
+     "prefix": "director"
+     "body": "director"
+  "prototype":
+     "prefix": "prototype"
+     "body": "prototype"
+  "arguments":
+     "prefix": "arguments"
+     "body": "arguments"
+
+#####################################################################
+#####################################################################
+  "cclog()":
+     "prefix": "cclog()"
+     "body": "cc.log(${0:arguments});"
+#####################################################################
+  "addChild()":
+     "prefix": "addChild()"
+     "body": "addChild(${1:display})${99:;}"
+#####################################################################
+  "attr()":
+     "prefix": "attr()"
+     "body": "attr(${1:object})${99:;}"
+#####################################################################
+  "arr_push()":
+     "prefix": "arr_push()"
+     "body": "push(${1:item})${99:;}"
+#####################################################################
+  "arr_splice()":
+     "prefix": "arr_splice()"
+     "body": "splice(${1:startIndex}, ${2:deleteCount})${99:;}"
+#####################################################################
+  "cc_log()":
+     "prefix": "arr_indexOf()"
+     "body": "indexOf(${1:object})${99:;}"
+#####################################################################
+  "cc_log()":
+     "prefix": "arr_pop()"
+     "body": "pop()${99:;}"
+#####################################################################
+  "arr_shift()":
+     "prefix": "arr_shift()"
+     "body": "shift()${99:;}"
+#####################################################################
+  "arr_sortOn()":
+     "prefix": "arr_sortOn()"
+     "body": "sortOn([${1:key}], [${2:Array.NUMERIC}])${99:;}"
+#####################################################################
+  "arr_数值（非字符串）排序()":
+     "prefix": "arr_NUMERIC"
+     "body": "Array.NUMERIC"
+#####################################################################
+  "arr_降序()":
+     "prefix": "arr_DESCENDING"
+     "body": "Array.DESCENDING"
+#####################################################################
+  "arr_不区分大小写()":
+     "prefix": "arr_CASEINSENSITIVE"
+     "body": "Array.CASEINSENSITIVE"
+#####################################################################
+  "arr_唯一排序()":
+     "prefix": "arr_UNIQUESORT"
+     "body": "Array.UNIQUESORT"
+#####################################################################
+  "arr_返回的数组包含数组索引()":
+     "prefix": "arr_RETURNINDEXEDARRAY"
+     "body": "Array.RETURNINDEXEDARRAY"
+#####################################################################
+  "bind()":
+     "prefix": "bind()"
+     "body": "bind(${1:this})${99:;}"
+#####################################################################
+  "getWinSize()":
+     "prefix": "getWinSize()"
+     "body": "getWinSize()${99:;}"
+#####################################################################
+  "getChildren()":
+     "prefix": "getChildren()"
+     "body": "getChildren()${99:;}"
+#####################################################################
+  "getRunningScene()":
+     "prefix": "getRunningScene()"
+     "body": "director.getRunningScene()${99:;}"
+#####################################################################
+  "instanceof()":
+     "prefix": "instanceof()"
+     "body": "instanceof(${1:object})${99:;}"
+#####################################################################
+  "math_max()":
+     "prefix": "math_max()"
+     "body": "Math.max(${1:value})"
+#####################################################################
+  "math_round()":
+     "prefix": "math_round()"
+     "body": "Math.round(${1:value})"
+#####################################################################
+  "math_floor()":
+     "prefix": "math_floor()"
+     "body": "Math.floor(${1:value})"
+#####################################################################
+  "math_ceil()":
+     "prefix": "math_ceil()"
+     "body": "Math.ceil(${1:value})"
+#####################################################################
+  "math_random()":
+     "prefix": "math_random()"
+     "body": "Math.random() * (${1:max} - ${2:min}) + ${2:min}"
+#####################################################################
+  "parseInt()":
+     "prefix": "parseInt()"
+     "body": "parseInt(${1:string})${99:;}"
+#####################################################################
+  "parseFloat()":
+     "prefix": "parseFloat()"
+     "body": "parseFloat(${1:string})${99:;}"
+#####################################################################
+  "removeFromParent()":
+     "prefix": "removeFromParent()"
+     "body": "removeFromParent(${1:true})${99:;}"
+#####################################################################
+  "setRotation()":
+     "prefix": "setRotation()"
+     "body": "setRotation(${1:value})${99:;}"
+#####################################################################
+  "setRotationX()":
+     "prefix": "setRotationX()"
+     "body": "setRotationX(${1:value})${99:;}"
+#####################################################################
+  "setRotationY()":
+     "prefix": "setRotationY()"
+     "body": "setRotationY(${1:value})${99:;}"
+
+#####################################################################
+  "setInterval()":
+     "prefix": "setInterval()"
+     "body": "var ${0:value} = setInterval(${1:fun}, ${2:delay})${99:;}"
+#####################################################################
+  "setAnchorPoint()":
+     "prefix": "setAnchorPoint()"
+     "body": "setAnchorPoint(${1:x}, ${2:y})${99:;}"
+#####################################################################
+  "setTexture()":
+     "prefix": "setTexture()"
+     "body": "setTexture(${1:texture})${99:;}"
+
+#####################################################################
+  "typeof()":
+     "prefix": "typeof()"
+     "body": "typeof(${1:object})${99:;}"

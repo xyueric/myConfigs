@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[local instance  = nil --#${1:class_name}
+local function getInstance()
+    if instance == nil then
+        instance  =  ${1:class_name}.new()
+    end
+    return instance
+end
+return getInstance()]]></content>
+    <tabTrigger>getInstance</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入getInstance函数</description>
+</snippet>

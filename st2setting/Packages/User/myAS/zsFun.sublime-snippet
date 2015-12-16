@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[/**
+ * ${1:description}
+ */
+]]></content>
+	<tabTrigger>zsfun</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>插入function注释</description>
+</snippet>

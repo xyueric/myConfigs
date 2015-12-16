@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[math.randomseed(tostring(os.time()):reverse():sub(1, 6))
+${1:local ran} = math.random()]]></content>
+    <tabTrigger>myrandom</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入随机函数</description>
+</snippet>

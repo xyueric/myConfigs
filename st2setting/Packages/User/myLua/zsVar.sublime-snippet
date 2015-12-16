@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[-- ${4:description}
+--@field [parent=#${1:module_name}] #${2:type} ${3:name}
+]]></content>
+    <tabTrigger>zsvar</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入var注释</description>
+</snippet>
