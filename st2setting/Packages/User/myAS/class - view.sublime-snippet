@@ -1,0 +1,118 @@
+<snippet>
+	<content><![CDATA[package 
+{
+	import com.hdl.Const.AssetsConst;
+	import com.hdl.Const.InfoConst;
+	import com.hdl.UI.BaseCommonView;
+	import com.hdl.UI.NumberMc;
+	import com.hdl.UI.Icon.BaseIcon;
+	import com.hdl.manager.NoticeManager;
+	import com.hdl.mvc.view.loading.Loading2View;
+	import com.superkaka.Tools.CommonEvent;
+	import com.superkaka.mvc.ViewFactory;
+	
+	import flash.display.MovieClip;
+	import flash.display.SimpleButton;
+	import flash.events.MouseEvent;
+	import flash.text.TextField;
+
+	/**
+	 * ${0:description}
+	 * @author EricHsu
+	 */
+	public class ${1:class_name} extends BaseCommonView
+	{
+		
+		public function ${1:class_name}()
+		{
+			super();
+			
+		}
+
+		override public function init() : void
+		{
+			initAsset(AssetsConst.${2:asset_name});
+			super.init();
+		}
+		
+		override public function renderView(...args):void
+		{
+			ViewFactory.getIns().initView(Loading2View).hide();
+
+			initLayer("${1:class_name}");
+
+			super.renderView();
+		}
+		
+		override public function renderUI():void
+		{
+
+			update();
+		}
+		
+		override public function addEvents():void
+		{
+			super.addEvents();
+
+		}
+		
+		override public function removeEvents():void
+		{
+			super.removeEvents();
+
+		}
+
+		override public function show():void
+		{
+			super.show();
+			
+			if(layer)
+				update();
+		}
+		
+		override public function hide():void
+		{
+			super.hide();
+		}
+
+		override protected function onProgress(...args):void
+		{
+			var lv:Loading2View = ViewFactory.getIns().initView(Loading2View) as Loading2View;
+			lv.show();
+			lv.showProcess(args);
+		}
+
+		override protected function __onResize(evt:CommonEvent):void
+		{
+			
+		}
+
+		override public function update():void
+		{
+			super.update();
+
+
+		}
+		//-------------------------------------------------------------------
+		//		main
+		//-------------------------------------------------------------------
+		private function onClick_btn(e:MouseEvent):void
+		{
+			var tarName:String = e.target.name;
+
+			
+		}
+
+
+		//-------------------------------------------------------------------
+		//  	assets
+		//-------------------------------------------------------------------
+		
+	}
+
+}
+]]></content>
+	<tabTrigger>class..view</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>插入 class view</description>
+</snippet>

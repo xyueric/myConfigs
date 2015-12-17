@@ -1,0 +1,193 @@
+{
+	"scope":"source.lua",
+
+	"completions":
+	[
+		//my word
+		"destroy",
+		{ "trigger": "cc.scheduleScriptFunc()", "contents": "cc.Director:getInstance():getScheduler():scheduleScriptFunc(${2:foo}, ${1:interval}, false)" },
+		{ "trigger": "cc.unscheduleScriptEntry()", "contents": "cc.Director:getInstance():getScheduler():unscheduleScriptEntry(${1:scheduleId})" },
+		{ "trigger": "param@", "contents": "--@param #${1:type} ${2:ParamName}	${3:description}" },
+		{ "trigger": "return@", "contents": "--@return #${1:type} ${3:description}" },
+
+		//project work
+		"EnteringScene", "Event", "addEventListener",
+		{ "trigger": "logDebug()", "contents": "Log:debug(\"${1:msg}\", ${2:value})" },
+		{ "trigger": "logError()", "contents": "Log:error(\"${1:msg}\", ${2:value})" },
+		{ "trigger": "logInfo()", "contents": "Log:info(\"${1:msg}\", ${2:value})" },
+		
+
+		//---------------------------------------
+		//lua api
+		"local", "if", "else", "return", "false", "true", "break", "or", "and", "not", "coroutine", "super", "self", 
+		"float", "boolean", "number", "sequence", "userdata", "string",
+		"__index", "_G", "__add", "__sub", "__add", "__mul", "__div", "__unm", "__mod",  "__pow", 
+
+		{ "trigger": "setmetatable()", "contents": "setmetatable(${1})" },
+		{ "trigger": "getmetatable()", "contents": "getmetatable(${1})" },
+		{ "trigger": "require \"\"", "contents": "require \"${1}\"" },
+		{ "trigger": "require()", "contents": "require(\"${1}\")" },
+		{ "trigger": "print()", "contents": "print(${1})" },
+		{ "trigger": "format()", "contents": "format(${1})" },
+
+		{ "trigger": "math_rad()", "contents": "math.rad($1)" },
+		{ "trigger": "math_deg()", "contents": "math.deg($1)" },
+		{ "trigger": "math_sin()", "contents": "math.sin($1)" },
+		{ "trigger": "math_cos()", "contents": "math.cos($1)" },
+		{ "trigger": "math_abs()", "contents": "math.abs($1)" },
+		{ "trigger": "math_atan()", "contents": "math.atan($1)" },
+		{ "trigger": "math_atan2()", "contents": "math.atan2($1, $2)" },
+		{ "trigger": "math_pow()", "contents": "math.pow($1, $2)" },
+		{ "trigger": "math_floor()", "contents": "math.floor($1)" },
+		{ "trigger": "math_ceil()", "contents": "math.ceil($1)" },
+		{ "trigger": "math_max()", "contents": "math.max($1)" },
+		{ "trigger": "math_min()", "contents": "math.min($1)" },
+		{ "trigger": "math_random()", "contents": "math.random(${1:1}, ${2:100})" },
+		{ "trigger": "math_randomseed()", "contents": "math.randomseed(${1:os.time()})" },
+		{ "trigger": "math_mod()", "contents": "math.mod(${1:a}, ${2:b})" },
+		{ "trigger": "math_modf()", "contents": "math.modf(${1:value})" },
+		
+		{ "trigger": "table_insert()", "contents": "table.insert(${1:table}, ${2:pos,value})" },
+		{ "trigger": "table_remove()", "contents": "table.remove(${1:table}, ${2:pos})" },
+		{ "trigger": "table_sort()", "contents": "table.sort($1, $2)" },
+		{ "trigger": "table_concat()", "contents": "table.concat($1, $2)" },
+		{ "trigger": "table_foreach()", "contents": "table.foreach(${1:table}, ${2:foo})"},
+		{ "trigger": "table_getn()", "contents": "table.getn(${1:table})" },
+		{ "trigger": "type()", "contents": "type($1)" },
+		{ "trigger": "traceback()", "contents": "traceback()" },
+		{ "trigger": "tostring()", "contents": "tostring(${1:value})" },
+		{ "trigger": "tonumber()", "contents": "tonumber(${1:value})" },
+		
+		{ "trigger": "string_len()", "contents": "string.len($1)" },
+		{ "trigger": "string_rep()", "contents": "string.rep($1, $2)" },
+		{ "trigger": "string_lower()", "contents": "string.lower($1)" },
+		{ "trigger": "string_upper()", "contents": "string.upper($1)" },
+		{ "trigger": "string_sub()", "contents": "string.sub($1, $2)" },
+		{ "trigger": "string_format()", "contents": "string.format($1)" },
+		{ "trigger": "string_char()", "contents": "string.char($1)" },
+		{ "trigger": "string_byte()", "contents": "string.byte($1)" },
+		
+		{ "trigger": "os_date()", "contents": "os.date(\"*t\")" },
+		{ "trigger": "os_date2()", "contents": "os.date(\"${1:formet}\", ${2:time})" },
+		{ "trigger": "os_time()", "contents": "os.time()" },
+		{ "trigger": "os_clock()", "contents": "os.clock()" },
+		{ "trigger": "os_difftime()", "contents": "os.difftime(${1:t1}, ${2:t2})" },
+		{ "trigger": "os_time2()", "contents": "os.time({year=$1, month=$2, day=$3, hour=$4, min=$5, sec=$6, isdit=true})" },
+
+		{ "trigger": "socket_gettime()", "contents": "socket.gettime()" },
+
+		//---------------------------------------
+		//spine api
+		{ "trigger": "spine_addAnimation()", "contents": "addAnimation($1)" },
+		{ "trigger": "spine_setAnimation()", "contents": "setAnimation($1)" },
+		{ "trigger": "spine_setMix()", "contents": "setMix($1)" },
+		{ "trigger": "spine_getCurrent()", "contents": "getCurrent($1)" },
+		{ "trigger": "spine_clearTrack()", "contents": "clearTrack()" },
+		{ "trigger": "spine_getSkeleton()", "contents": "getSkeleton()" },
+		{ "trigger": "spine_setTimeScale()", "contents": "setTimeScale($1)" },
+
+		//---------------------------------------
+		//cocos2d lua api
+		"Handler", "EVENT_TOUCH_BEGAN", "EVENT_TOUCH_MOVED",
+		"EVENT_TOUCH_ENDED", "EventListenerTouchOneByOne", "width", "height",
+		"Layer", "Scene", "Sprite", "Animate", "Animation", "collect", "setpause", "setstepmul", "SpriteFrame", "Application", "PLATFORM_OS_IPHONE", "PLATFORM_OS_ANDROID", "PLATFORM_OS_MAC", "DrawNode",    "retain()", "release()", "PLATFORM_OS_IPAD", "PLATFORM_OS_WINDOWS", "isPaused", "SimpleAudioEngine", "ccui", "Helper", "Director",
+		// a
+		{ "trigger": "addChild()", "contents": "addChild($1)" },
+		{ "trigger": "addEventListenerWithSceneGraphPriority()", "contents": "addEventListenerWithSceneGraphPriority(${1:listener}, ${2:node})" },
+		{ "trigger": "addTouchEventListener()", "contents": "addTouchEventListener(function(...) ${1:function} end)" },
+		{ "trigger": "addImage", "contents": "addImage($1)" },
+		{ "trigger": "addObject", "contents": "addObject($1)" },
+		{ "trigger": "addSearchResolutionsOrder", "contents": "addCaddSearchResolutionsOrderild( \"$1\" )" },
+		// b
+		// c
+		{ "trigger": "create()", "contents": "create()" },
+		{ "trigger": "createWithSpriteFrames", "contents": "createWithSpriteFrames({$1}, $2)" },
+		{ "trigger": "createWithSpriteFrame", "contents": "createWithSpriteFrame($1)" },
+		{ "trigger": "createWithTexture", "contents": "createWithTexture($1, $2)" },
+		{ "trigger": "collectgarbage", "contents": "collectgarbage()" },
+
+		{ "trigger": "cc_p()", "contents": "cc.p(${1:0}, ${2:0})" },
+		{ "trigger": "cc_rect()", "contents": "cc.rect(${1:x}, ${2:y}, ${3:width}, ${4:height})" },
+		{ "trigger": "cc_pGetDistance()", "contents": "cc.pGetDistance(${1:0}, ${2:0})" },
+		// d
+		// e
+		// f
+		{ "trigger": "fullPathForFilename()", "contents": "fullPathForFilename($1)" },
+		// g
+		{ "trigger": "getParent()", "contents": "getParent()" },
+		{ "trigger": "getPosition()", "contents": "getPosition()" },
+		{ "trigger": "getPositionX()", "contents": "getPositionX()" },
+		{ "trigger": "getPositionY()", "contents": "getPositionY()" },
+		{ "trigger": "getContentSize()", "contents": "getContentSize()" },
+		{ "trigger": "getRunningScene()", "contents": "cc.Director:getInstance():getRunningScene()" },
+		{ "trigger": "getVisibleSize()", "contents": "getVisibleSize()" },
+		{ "trigger": "getVisibleOrigin()", "contents": "getVisibleOrigin()" },
+		{ "trigger": "getScheduler()", "contents": "getScheduler()" },
+		{ "trigger": "getOpenGLView()", "contents": "getOpenGLView()" },
+		{ "trigger": "getInstance()", "contents": "getInstance()" },
+		{ "trigger": "getLocation()", "contents": "getLocation()" },
+		{ "trigger": "getEventDispatcher()", "contents": "getEventDispatcher()" },
+		{ "trigger": "getTargetPlatform()", "contents": "getTargetPlatform()" },
+		{ "trigger": "getTextureCache()", "contents": "getTextureCache()" },
+		{ "trigger": "getName()", "contents": "getName()" },
+		{ "trigger": "getLocalZOrder()", "contents": "getLocalZOrder()" },
+		{ "trigger": "getGlobalZOrder()", "contents": "getGlobalZOrder()" },
+		{ "trigger": "getBoundingBox()", "contents": "getBoundingBox()" },
+		{ "trigger": "getDelta()", "contents": "getDelta()" },
+		{ "trigger": "getWinSize()", "contents": "getWinSize()" },
+		{ "trigger": "getAnchorPoint()", "contents": "getAnchorPoint()" },
+		{ "trigger": "getChildByName()", "contents": "getChildByName(\"${0:name}\")" },
+		{ "trigger": "getString()", "contents": "getString()" },
+		// h
+		// i
+		{ "trigger": "isFlippedX()", "contents": "isFlippedX()" },
+		{ "trigger": "isSelected()", "contents": "isSelected()" },
+		// j
+		// k
+		// l
+		{ "trigger": "loadTextureNormal()", "contents": "loadTextureNormal(${0:url})" },
+		// m
+		// n
+		// o
+		// p
+		{ "trigger": "playEffect()", "contents": "playEffect($1)" },
+		{ "trigger": "preloadEffect()", "contents": "preloadEffect($1)" },
+		{ "trigger": "playMusic()", "contents": "playMusic($1, $2)" },
+		// q
+		// r
+		{ "trigger": "replaceScene()", "contents": "replaceScene()" },
+		{ "trigger": "runWithScene()", "contents": "runWithScene()" },
+		{ "trigger": "registerScriptHandler()", "contents": "registerScriptHandler(${1:function}, cc.Handler.${2:event_type})" },
+		{ "trigger": "removeChild", "contents": "removeChild($1, ${2:true})" },
+		{ "trigger": "removeFromParent()", "contents": "removeFromParent(${1:true})" },
+
+		{ "trigger": "runAction()", "contents": "runAction($1)" },
+		{ "trigger": "registerScriptTapHandler()", "contents": "registerScriptTapHandler($1)" },
+		// s
+		{ "trigger": "setPosition()", "contents": "setPosition(${1:x}, ${2:y})" },
+		{ "trigger": "setScaleX()", "contents": "setScaleX($1)" },
+		{ "trigger": "setScaleY()", "contents": "setScaleY($1)" },
+		{ "trigger": "setScale()", "contents": "setScale($1, $2)" },
+		{ "trigger": "setRotation()", "contents": "setRotation($1)" },
+		{ "trigger": "scheduleScriptFunc()", "contents": "scheduleScriptFunc($1, $2, ${3:false})" },
+		{ "trigger": "setDesignResolutionSize()", "contents": "setDesignResolutionSize($1, $2, $3)" },
+		{ "trigger": "setVisible()", "contents": "setVisible(${1:true})" },
+		{ "trigger": "setFlippedX()", "contents": "setFlippedX(${1:true})" },
+		{ "trigger": "setAnchorPoint()", "contents": "setAnchorPoint(${1:x}, ${2:y})" },
+		{ "trigger": "setContentSize()", "contents": "setContentSize(${1:x}, ${2:y})" },
+		{ "trigger": "setString()", "contents": "setString(${1:str})" },
+		// t
+		// u
+		
+		{ "trigger": "unscheduleScriptEntry()", "contents": "unscheduleScriptEntry(${1:scheduleId})" },
+		// v
+		// w
+		// x
+		// y
+		// z
+
+		// cocos ui
+		{ "trigger": "seekWidgetByName()", "contents": "seekWidgetByName(${1:node}, ${2:name})" },
+		{}
+	]
+}

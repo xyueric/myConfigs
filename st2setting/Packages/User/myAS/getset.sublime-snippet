@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[${4:public} function get ${1:foo_name}():${3:type}
+{
+	return ${2:value};
+}
+${4:public} function set ${1:$foo_name}(value:${3:type}):void
+{
+	${2:value} = value;
+}
+
+]]></content>
+	<tabTrigger>fun..get..set</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>fun..get & set</description>
+</snippet>

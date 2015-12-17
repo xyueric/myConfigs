@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[case ${1:$flag}:
+	${0://enter_code}
+	break;]]></content>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>case</description>
+</snippet>

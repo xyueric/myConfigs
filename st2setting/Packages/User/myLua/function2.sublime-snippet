@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[---${4:description}
+--@function [parent=#${2:parent}] ${1:function_name}
+--@param self
+function ${2:parent}:${1:function_name}(${3:...})
+    $0
+end]]></content>
+    <tabTrigger>func</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入一个带注释的函数</description>
+</snippet>

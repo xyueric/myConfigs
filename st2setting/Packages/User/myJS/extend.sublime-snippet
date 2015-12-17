@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[extend({
+    
+	ctor:function (${1:args}) {
+        this._super();
+
+
+        
+    },
+});]]></content>
+    <tabTrigger>extend()</tabTrigger>
+    <scope>source.js</scope>
+    <description>插入继承函数</description>
+</snippet>

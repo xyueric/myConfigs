@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[for (var ${20:i}:int = 0; ${20:i} < ${1:Things}; ${20:i}++) 
+{
+	${0://enter_code}
+}]]></content>
+	<tabTrigger>for</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>for (…) {…}</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[local instance = nil
+local function getInstance()
+    if not instance then
+        instance = ${1:complex}.new()
+    end
+    return instance 
+end
+
+]]></content>
+    <tabTrigger>singletion</tabTrigger>
+    <scope>source.lua</scope>
+    <description>插入单例</description>
+</snippet>

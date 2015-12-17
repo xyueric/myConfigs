@@ -1,0 +1,106 @@
+<snippet>
+	<content><![CDATA[package 
+{
+	import com.hdl.Const.AssetsConst;
+	import com.hdl.Const.EventConst;
+	import com.hdl.UI.BaseAssetsSprite;
+	import com.hdl.UI.NumberMc;
+	import com.hdl.manager.EventManager;
+	import com.hdl.manager.NoticeManager;
+	import com.hdl.manager.PopTipManager;
+	import com.hdl.net.SocketConnectManager;
+	import com.hdl.net.SocketsSendManager;
+	import com.superkaka.Tools.CommonEvent;
+	import com.superkaka.game.Const.GameConst;
+	
+	import flash.display.MovieClip;
+	import flash.display.SimpleButton;
+	import flash.display.Sprite;
+	import flash.events.MouseEvent;
+	import flash.events.TimerEvent;
+	import flash.text.TextField;
+	import flash.utils.Timer;
+
+
+	/**
+	 * ${0:description}
+	 * @author EricHsu
+	 */
+	public class ${1:class_name} extends BaseAssetsSprite 
+	{
+		
+		public function ${1:class_name}()
+		{
+			initAsset(AssetsConst.${2:asset_name});
+			
+		}
+
+		override public function renderView(...args):void
+		{
+			layer = this.getAssetObject("${1:class_name}") as Sprite;
+			this.addChild(layer);
+			
+			renderUI();
+			addEvents();
+		}
+
+		override public function destroy():void
+		{
+			removeEvents();
+
+			super.destroy();
+		}
+
+		public function renderUI():void
+		{
+			
+		}
+
+		private function addEvents():void
+		{
+			
+
+		}
+
+		private function removeEvents():void
+		{
+			
+		}
+
+		public function show():void
+		{
+			
+		}
+
+		public function hide():void
+		{
+			
+		}
+
+		public function update():void
+		{
+
+		}
+		//-------------------------------------------------------------------
+		//		main
+		//-------------------------------------------------------------------
+		private function onClick_btn(e:MouseEvent):void
+		{
+			var tarName:String = e.target.name;
+
+			
+		}
+
+		
+		//-------------------------------------------------------------------
+		//  	assets
+		//-------------------------------------------------------------------
+		
+	}
+
+}
+]]></content>
+	<tabTrigger>class..sprite</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>插入 class sprite</description>
+</snippet>

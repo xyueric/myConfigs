@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[var _property = ${2:null};
+Object.defineProperty(this, "${1:property}", {
+    get:function () { 
+        return _${1:property}; 
+    },
+    set:function (value) { 
+        _${1:property} = value; 
+    }
+});]]></content>
+    <tabTrigger>getset</tabTrigger>
+    <scope>source.js</scope>
+    <description>get_set</description>
+</snippet>

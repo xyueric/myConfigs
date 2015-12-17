@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[function get ${1:foo_name}():${3:type}
+{
+	return ${2:foo_name};
+}
+]]></content>
+	<tabTrigger>fun..get</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>fun..get</description>
+</snippet>

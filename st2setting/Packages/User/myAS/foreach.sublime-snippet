@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[for each (var ${1:item}:${2:type} in ${3:arr}) 
+{
+	${0://enter_code}
+}]]></content>
+	<tabTrigger>foreach</tabTrigger>
+	<scope>source.actionscript.3</scope>
+	<description>for each</description>
+</snippet>

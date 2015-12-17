@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[for ${1:k}, ${2:item} in pairs(${3:table_name}) do
+    ${0}
+end]]></content>
+    <tabTrigger>forp</tabTrigger>
+    <scope>source.lua</scope>
+    <description>for in pairs</description>
+</snippet>
