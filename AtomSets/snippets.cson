@@ -72,6 +72,20 @@ classSelf.${1:function_name} = function(${2:args}) {
 
 """
 #####################################################################
+  "get_set":
+     "prefix": "getset"
+     "body": """var _property = ${2:null};
+Object.defineProperty(this, "${1:property}", {
+    get:function () { 
+        return _${1:property}; 
+    },
+    set:function (value) { 
+        _${1:property} = value; 
+    }
+});
+
+"""
+#####################################################################
 #####################################################################
   "destroy":
      "prefix": "destroy"
@@ -100,7 +114,6 @@ classSelf.${1:function_name} = function(${2:args}) {
   "arguments":
      "prefix": "arguments"
      "body": "arguments"
-
 #####################################################################
 #####################################################################
   "cclog()":
@@ -175,6 +188,10 @@ classSelf.${1:function_name} = function(${2:args}) {
      "prefix": "getRunningScene()"
      "body": "director.getRunningScene()${99:;}"
 #####################################################################
+  "getContentSize()":
+     "prefix": "getContentSize()"
+     "body": "director.getContentSize()${99:;}"
+#####################################################################
   "instanceof()":
      "prefix": "instanceof()"
      "body": "instanceof(${1:object})${99:;}"
@@ -222,11 +239,22 @@ classSelf.${1:function_name} = function(${2:args}) {
   "setRotationY()":
      "prefix": "setRotationY()"
      "body": "setRotationY(${1:value})${99:;}"
-
+#####################################################################
+  "str_substr()":
+     "prefix": "str_substr()"
+     "body": "substr(${1:start}, ${2:len})${99:;}"
+#####################################################################
+  "str_charAt()()":
+     "prefix": "str_charAt()()"
+     "body": "charAt()(${1:index})${99:;}"
 #####################################################################
   "setInterval()":
      "prefix": "setInterval()"
      "body": "var ${0:value} = setInterval(${1:fun}, ${2:delay})${99:;}"
+#####################################################################
+  "clearInterval()":
+     "prefix": "clearInterval()"
+     "body": "clearInterval(${1:sid})${99:;}"
 #####################################################################
   "setAnchorPoint()":
      "prefix": "setAnchorPoint()"
@@ -235,7 +263,6 @@ classSelf.${1:function_name} = function(${2:args}) {
   "setTexture()":
      "prefix": "setTexture()"
      "body": "setTexture(${1:texture})${99:;}"
-
 #####################################################################
   "typeof()":
      "prefix": "typeof()"

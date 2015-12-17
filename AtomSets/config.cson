@@ -23,6 +23,7 @@
       "javascript-snippets"
       "language-actionscript3"
       "minimap"
+      "aligner"
     ]
     autoHideMenuBar: true
   editor:
@@ -54,6 +55,12 @@
   minimap:
     scrollAnimation: true
     absoluteMode: true
+  "git-plus": {}
+".diff.source":
+  editor:
+    softWrapHangingIndent: 2
 ".ini.source":
   editor:
     tabLength: 4
+    softWrapHangingIndent: 2
+    autoIndentOnPaste: true
