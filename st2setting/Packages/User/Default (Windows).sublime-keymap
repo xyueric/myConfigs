@@ -21,6 +21,23 @@
       "keys": ["ctrl+shift+v"],
       "command": "clipboard_manager_choose_and_paste"
    },
+   { "keys": ["ctrl++"], "command": "js_format" },
+   { "keys": ["ctrl+="], "command": "js_format" },
+   { "keys": ["ctrl+keypad_plus"], "command": "js_format" },
+   { "keys": ["ctrl+-"], "command": "js_format" },
+   { "keys": ["ctrl+keypad_minus"], "command": "js_format" },
 
+   { "keys": ["ctrl+equals"], "command": "js_format" },
+   { "keys": ["ctrl+shift+equals"], "command": "js_format" },
+   { "keys": ["ctrl+keypad_plus"], "command": "js_format" },
+   { "keys": ["ctrl+shift+keypad_plus"], "command": "js_format" },
+   { "keys": ["ctrl+period"], "command": "auto_complete" },
+   { "keys": ["ctrl+period"], "command": "replace_completion_with_auto_complete", "context":
+      [
+         { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+         { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+         { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+      ]
+   },
    {}
 ]
