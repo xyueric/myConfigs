@@ -1,8 +1,11 @@
 <snippet>
-    <content><![CDATA[classSelf.${1:function_name} = function (${2:argument}) {
+    <content><![CDATA[/**
+ * ${3:description}
+ */
+ ${1:function_name}: function (${2:argument}) {
 	${0:// body...}
-};]]></content>
-    <tabTrigger>fun</tabTrigger>
+},]]></content>
+    <tabTrigger>func</tabTrigger>
     <scope>source.js</scope>
     <description>插入函数</description>
 </snippet>

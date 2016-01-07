@@ -6,33 +6,33 @@
  * ${4:[class description]}
  */
 ${1:class_name} = cc.Class.extend({
+    
+
     ctor: function(${3:args}) {
+        // this._super(${3:args});
+        this.initFoo();
+
+    },
+
+    /**
+     * 初始化
+     */
+    initFoo: function (${3:args}) {
+        // this._super(${3:args});
+        ${0}
+    },
+
+    /**
+     * 销毁
+     */
+    destroy: function() {
         // this._super();
-        this.initFoo(${3:args});
-    }
+
+    },
+
+
 });
-var classSelf = ${1:class_name}.prototype;
-//-------------------------------------------------------------------
-//        main
-//-------------------------------------------------------------------
-/**
- * 初始化
- */
-classSelf.initFoo = function (${3:args}) {
-    
-};
-
-/**
- * 销毁
- */
-classSelf.destroy = function() {
-    
-};
-
-
-
-//-------------------------------------------------------------------
-delete classSelf;]]></content>
+]]></content>
     <tabTrigger>newclass</tabTrigger>
     <scope>source.js</scope>
     <description>new_class</description>
