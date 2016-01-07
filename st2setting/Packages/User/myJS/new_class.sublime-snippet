@@ -6,15 +6,19 @@
  * ${4:[class description]}
  */
 ${1:class_name} = cc.Class.extend({
+    
+
     ctor: function(${3:args}) {
         // this._super(${3:args});
+        this.initFoo();
+
     },
 
     /**
      * 初始化
      */
     initFoo: function (${3:args}) {
-        this._super(${3:args});
+        // this._super(${3:args});
         ${0}
     },
 
@@ -22,7 +26,7 @@ ${1:class_name} = cc.Class.extend({
      * 销毁
      */
     destroy: function() {
-        this._super();
+        // this._super();
 
     },
 

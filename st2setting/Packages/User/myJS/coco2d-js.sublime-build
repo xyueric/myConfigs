@@ -1,3 +1,4 @@
 {  
-  "cmd": ["C:/Users/Eric/AppData/Local/Google/Chrome/Application/chrome.exe", "http://localhost:53342/DemoSnake/index.html"],   
+  "cmd": ["C:/Users/Eric/AppData/Local/Google/Chrome/Application/chrome.exe", "http://localhost"],   
+  "selector": "source.js",
 }  
