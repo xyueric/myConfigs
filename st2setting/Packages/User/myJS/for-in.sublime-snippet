@@ -2,7 +2,7 @@
     <content><![CDATA[for (var ${2:key} in ${1:array}) {
     var item = ${1:array}[${2:key}];
     $0
-};]]></content>
+}]]></content>
     <tabTrigger>forin</tabTrigger>
     <scope>source.js</scope>
     <description>for..in</description>

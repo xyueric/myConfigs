@@ -4,7 +4,7 @@
     "completions":
     [
         //my word
-        "destroy", "progress", "enabled", "example", "param", "result",
+        "destroy", "progress", "enabled", "example", "result",
         // { "trigger": "target_name", "contents": "target.name;" },
 
         //---------------------------------------
@@ -16,7 +16,7 @@
 
         //---------------------------------------
         //key word
-        "this.", "_super.", "parent", "length", "return", "continue;", "break;", "return", "extend", "prototype", "arguments", "delete",
+        "this.", "_super()", "parent", "length", "return", "continue;", "break;", "return", "extend", "prototype", "arguments", "delete",
         "width", "height", "push", "visible", "scaleX", "scaleY", "rotation",
         
         //type
@@ -32,6 +32,7 @@
 
         { "trigger": "arr_push()", "contents": "push(${1:item})${99:;}" },
         { "trigger": "arr_splice()", "contents": "splice(${1:startIndex}, ${2:deleteCount})${99:;}" },
+        { "trigger": "arr_split()", "contents": "split(\"${1:separator}\")${99:;}" },
         { "trigger": "arr_indexOf()", "contents": "indexOf(${1:object})${99:;}" },
         { "trigger": "arr_pop()", "contents": "pop()${99:;}" },
         { "trigger": "arr_shift()", "contents": "shift()${99:;}" },
@@ -68,6 +69,7 @@
         // p
         { "trigger": "parseInt()", "contents": "parseInt(${1:string})${99:;}" },
         { "trigger": "parseFloat()", "contents": "parseFloat(${1:string})${99:;}" },
+        { "trigger": "param@", "contents": "@param    {${1:string}}   ${2:param_name}    ${2:description}" },
         // q
         // r
         { "trigger": "removeFromParent()", "contents": "removeFromParent(${1:true})${99:;}" },

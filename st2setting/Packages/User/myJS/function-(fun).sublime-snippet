@@ -2,7 +2,7 @@
     <content><![CDATA[/**
  * ${3:description}
  */
- ${1:function_name}: function (${2:argument}) {
+${1:function_name}: function (${2:arguments}) {
 	${0:// body...}
 },]]></content>
     <tabTrigger>func</tabTrigger>

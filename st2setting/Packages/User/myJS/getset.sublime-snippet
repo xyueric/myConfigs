@@ -7,7 +7,7 @@ Object.defineProperty(this, "${1:property}", {
     set:function (value) { 
         _${1:property} = value; 
     }
-});]]></content>
+})]]></content>
     <tabTrigger>getset</tabTrigger>
     <scope>source.js</scope>
     <description>get_set</description>

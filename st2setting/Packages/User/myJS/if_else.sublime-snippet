@@ -3,7 +3,7 @@
     ${0:$TM_SELECTED_TEXT}
 } else {
 
-};]]></content>
+}]]></content>
     <tabTrigger>ife</tabTrigger>
     <scope>source.js</scope>
     <description>if … else</description>
