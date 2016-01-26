@@ -2,7 +2,7 @@
 	"always_show_minimap_viewport": true,
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - Spaceblack/Color Schemes/Spaceblack-Monokai.tmTheme",
+	"color_scheme": "Packages/User/myLua/Monokai.tmTheme",
 	"default_line_ending": "unix",
 	"draw_minimap_border": true,
 	"draw_white_space": "selection",
@@ -27,8 +27,8 @@
 	"show_full_path": false,
 	"show_tab_close_buttons": false,
 	"tab_size": 4,
-	"theme": "Spaceblack.sublime-theme",
+	"theme": "Cyanide - Sky.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"trim_automatic_white_space": true,
-	"word_wrap": false
+	"word_wrap": true
 }
