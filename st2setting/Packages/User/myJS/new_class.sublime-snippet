@@ -5,35 +5,15 @@
  * ${1:class_name}
  * ${4:[class description]}
  */
-${1:class_name} = cc.Class.extend({
-    
+${1:class_name} = function () {
+    this.ctor();
+};
 
-    ctor: function(${3:args}) {
-        // this._super(${3:args});
-        this.initFoo();
-
-    },
-
-    /**
-     * 初始化
-     */
-    initFoo: function (${3:args}) {
-        // this._super(${3:args});
-        ${0}
-    },
-
-    /**
-     * 销毁
-     */
-    destroy: function() {
-        // this._super();
-
-    },
-
-
-});
+${1:class_name}.ctor = function() {
+    ${0:// body...}
+};
 ]]></content>
     <tabTrigger>newclass</tabTrigger>
     <scope>source.js</scope>
-    <description>new_class</description>
+    <description>class</description>
 </snippet>

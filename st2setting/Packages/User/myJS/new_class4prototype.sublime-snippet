@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[/**
+ * Created by EricHsu
+ *
+ * ${1:class_name}
+ * ${4:[class description]}
+ */
+${1:class_name} = function () {
+    this.ctor();
+};
+
+${1:class_name}.prototype.ctor = function() {
+    ${0:// body...}
+};
+
+
+//-------------------------------------------------------------------
+//        
+//-------------------------------------------------------------------
+var cur${1:class_name} = null;
+var get${1:class_name} = function() {
+    return cur${1:class_name};
+};
+var set${1:class_name} = function(obj) {
+    cur${1:class_name} = obj;
+};
+set${1:class_name}(new ${1:class_name}());
+]]></content>
+    <tabTrigger>newclass4prototype</tabTrigger>
+    <scope>source.js</scope>
+    <description>prototype</description>
+</snippet>

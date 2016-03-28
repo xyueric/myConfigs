@@ -1,12 +1,12 @@
 {
 	"always_show_minimap_viewport": true,
-	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/Monokai.tmTheme",
 	"default_line_ending": "unix",
 	"draw_minimap_border": true,
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
+	"fade_fold_buttons": false,
 	"find_selected_text": true,
 	"font_face": "Ubuntu Mono",
 	"font_size": 11,
@@ -24,11 +24,14 @@
 		100
 	],
 	"scroll_speed": 3.0,
+	"show_encoding": true,
 	"show_full_path": false,
 	"show_tab_close_buttons": false,
+	"spell_check": false,
+	"tab_completion": false,
 	"tab_size": 4,
 	"theme": "Soda Dark 3.sublime-theme",
-	"translate_tabs_to_spaces": false,
+	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"word_wrap": true
 }

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[${1:class_name}.${2:method_name} = function(${3:first_argument}) {
+    ${0:// body...}
+};
+]]></content>
+    <tabTrigger>func</tabTrigger>
+    <scope>source.js</scope>
+    <description>类函数</description>
+</snippet>

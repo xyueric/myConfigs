@@ -1,0 +1,38 @@
+<snippet>
+    <content><![CDATA[/**
+ * Created by EricHsu
+ *
+ * ${1:class_name}
+ * ${2:[class description]}
+ */
+${1:class_name} = ${3:cc.Class}.extend({
+    
+
+    ctor: function(${4:args}) {
+        ${5:// }this._super(${4:args});
+        this.initFoo();
+
+    },
+
+    /**
+     * 初始化
+     */
+    initFoo: function (${4:args}) {
+        ${0}// this._super(${4:args});
+    },
+
+    /**
+     * 销毁
+     */
+    destroy: function() {
+        // this._super();
+
+    },
+
+
+});
+]]></content>
+    <tabTrigger>newclass4cocos</tabTrigger>
+    <scope>source.js</scope>
+    <description>cocos</description>
+</snippet>
