@@ -3,7 +3,7 @@
     ${0:// body...}
 };
 ]]></content>
-    <tabTrigger>func</tabTrigger>
+    <tabTrigger>funclass</tabTrigger>
     <scope>source.js</scope>
     <description>类函数</description>
 </snippet>

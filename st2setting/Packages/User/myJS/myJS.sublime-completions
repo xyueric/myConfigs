@@ -106,6 +106,9 @@
         { "trigger": "setPercent()", "contents": "setPercent(${1:num})${0:;}" },
         { "trigger": "setString()", "contents": "setString(${1:num})${0:;}" },
         { "trigger": "setName()", "contents": "setName(${1:string})${0:;}" },
+        { "trigger": "super()", "contents": "_super(${1:args})${0:;}" },
+        { "trigger": "str_charAt()", "contents": "charAt(${1:index})${0:;}" },
+        { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len})${0:;}" },
 
         // t
         { "trigger": "typeof()", "contents": "typeof ${1:object}${0:;}" },

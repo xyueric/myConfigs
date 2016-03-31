@@ -2,10 +2,10 @@
     <content><![CDATA[/**
  * ${3:description}
  */
-${1:function_name}: function (${2:arguments}) {
+${1:function_name}: function(${2:arguments}) {
 	${0:// body...}
 },]]></content>
-    <tabTrigger>func</tabTrigger>
+    <tabTrigger>funcocos</tabTrigger>
     <scope>source.js</scope>
-    <description>插入函数</description>
+    <description>插入函数,cocos继承</description>
 </snippet>

@@ -1,10 +1,10 @@
 <snippet>
     <content><![CDATA[if (${1:true}) {
-    ${0:$TM_SELECTED_TEXT}
+    ${2:$TM_SELECTED_TEXT}
 } else {
-
+    ${0:$TM_SELECTED_TEXT}
 }]]></content>
     <tabTrigger>ife</tabTrigger>
     <scope>source.js</scope>
-    <description>if … else</description>
+    <description>if_else</description>
 </snippet>
