@@ -49,7 +49,7 @@
         // b
         { "trigger": "bind()", "contents": "bind(${1:this})${0:;}" },
         // c
-        { "trigger": "cc_log()", "contents": "cc.log(${1:msg})${0:;}" },
+        { "trigger": "cc_log()", "contents": "cc.log(\"${1:string}\", ${2:msg})${0:;}" },
         { "trigger": "console_log()", "contents": "console.log(${1:msg})${0:;}" },
         { "trigger": "trace()", "contents": "cc.log(${1:msg})${0:;}" },
         { "trigger": "print()", "contents": "cc.log(${1:msg})${0:;}" },
