@@ -103,6 +103,7 @@
         { "trigger": "setContentSize()", "contents": "setContentSize(${1:x}, ${2:y})${0:;}" },
         { "trigger": "setTexture()", "contents": "setTexture(${1:texture})${0:;}" },
         { "trigger": "setTouchEnabled()", "contents": "setTouchEnabled(${1:true})${0:;}" },
+        { "trigger": "setCascadeOpacityEnabled()", "contents": "setCascadeOpacityEnabled(${1:true})${0:;}" },
         { "trigger": "setPercent()", "contents": "setPercent(${1:num})${0:;}" },
         { "trigger": "setString()", "contents": "setString(${1:num})${0:;}" },
         { "trigger": "setName()", "contents": "setName(${1:string})${0:;}" },
