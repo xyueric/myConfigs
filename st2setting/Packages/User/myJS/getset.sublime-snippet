@@ -1,13 +1,5 @@
 <snippet>
-    <content><![CDATA[var _property = ${2:null};
-Object.defineProperty(this, "${1:property}", {
-    get:function () { 
-        return _${1:property}; 
-    },
-    set:function (value) { 
-        _${1:property} = value; 
-    }
-})]]></content>
+    <content><![CDATA[cc.defineGetterSetter(this, "${1:param_name}", _p._get${2:foo_name}, _p._set${2:foo_name});]]></content>
     <tabTrigger>getset</tabTrigger>
     <scope>source.js</scope>
     <description>get_set</description>
