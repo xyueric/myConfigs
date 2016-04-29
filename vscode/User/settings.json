@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Migrated from previous "File | Auto Save" setting:
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "projectManager.codePath": "d:\\Program Files (x86)\\Microsoft VS Code\\Bin\\Code.cmd",
+    "projectManager.openInNewWindow": false,
+    "editor.wrappingColumn": 90,
+    // "editor.fontSize": 15,
+    "editor.rulers": [
+        90
+    ],
+    "editor.wrappingIndent": "indent",
+}
