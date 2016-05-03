@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[/**
- * Created by EricHsu
+// Created by EricHsu
  *
- * ${1:class_name}
- * ${2:[class description]}
+// ${1:class_name}
+// ${2:[class description]}
  */
 var ${1:class_name} = ${3:cc.Class}.extend({
     
@@ -11,15 +11,6 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     ctor: function(args) {
         this._super(${5:view_name});
         
-
-    },
-
-    /**
-     * 初始化
-     */
-    initFoo: function (args) {
-        this._super(args);
-        ${0}
     },
 
     /**
@@ -28,6 +19,14 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     destroy: function() {
 
         this._super();
+    },
+
+    /**
+     * 初始化
+     */
+    initFoo: function (args) {
+        this._super(args);
+        ${0}
     },
     
     /**
