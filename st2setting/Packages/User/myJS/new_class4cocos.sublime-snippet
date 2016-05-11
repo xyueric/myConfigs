@@ -1,9 +1,9 @@
 <snippet>
-    <content><![CDATA[/**
-// Created by EricHsu
+    <content><![CDATA[/** 
+ * Created by EricHsu
  *
-// ${1:class_name}
-// ${2:[class description]}
+ * ${1:class_name}
+ * ${2:[class description]}
  */
 var ${1:class_name} = ${3:cc.Class}.extend({
     
@@ -16,7 +16,7 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     /**
      * 销毁
      */
-    destroy: function() {
+    destroy:function() {
 
         this._super();
     },
