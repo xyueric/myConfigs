@@ -113,7 +113,10 @@
 
         // t
         { "trigger": "typeof()", "contents": "typeof ${1:object}${99:;}$0" },
-        { "trigger": "toFixed()", "contents": "toFixed ${1:2}${99:;}$0" },
+        { "trigger": "toFixed()", "contents": "toFixed(${1:2})${99:;}$0" },
+        { "trigger": "this_schedule()", "contents": "this.schedule(${1:callback},  ${2:interval}${3:, repeat}${4:, delay}${5:, key})${99:;}$0" },
+        { "trigger": "this_scheduleOnce()", "contents": "this.scheduleOnce(${1:callback},  ${2:delay}${3:, key})${99:;}$0" },
+        { "trigger": "this_scheduleUpdate()", "contents": "this.scheduleUpdate()${99:;}$0" },
         // u
         // v
         // w
