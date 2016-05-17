@@ -14,5 +14,9 @@
     {
         "label": "my-test",
 		"description": "e:\\Working\\CocosWorkspace\\myTest"
+    },
+    {
+        "label": "interface",
+		"description": "e:\\Working\\temp\\interface"
     }
 ]
