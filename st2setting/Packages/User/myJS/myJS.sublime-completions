@@ -55,6 +55,7 @@
         { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
         { "trigger": "cc_error()", "contents": "cc.error(${1:msg});$0" },
         { "trigger": "cc_color()", "contents": "cc.color(${1:255}, ${2:255}, ${3:255}${4:, 255})${0}" },
+        { "trigger": "cc_hexToColor()", "contents": "cc.hexToColor(\"${1:hex}\")${0}" },
         // d
         // e
         // f
@@ -70,6 +71,7 @@
         // i
         { "trigger": "instanceof()", "contents": "instanceof(${1:object});$0" },
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
+        { "trigger": "isNaN()", "contents": "isNaN(${1:number});$0" },
         // j
         // k
         // l,

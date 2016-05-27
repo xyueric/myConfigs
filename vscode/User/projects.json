@@ -18,5 +18,9 @@
     {
         "label": "interface",
 		"description": "e:\\Working\\temp\\interface"
+    },
+    {
+        "label": "blog",
+		"description": "e:\\Svngit\\github_blog"
     }
 ]
