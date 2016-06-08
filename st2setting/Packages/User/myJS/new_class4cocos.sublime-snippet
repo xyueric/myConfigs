@@ -14,14 +14,6 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     },
 
     /**
-     * 销毁
-     */
-    destroy:function() {
-
-        this._super();
-    },
-
-    /**
      * 初始化
      */
     initFoo: function (args) {
@@ -44,6 +36,16 @@ var ${1:class_name} = ${3:cc.Class}.extend({
 
     },
 
+
+
+
+    /**
+     * 销毁
+     */
+    destroy: function() {
+
+        this._super();
+    }
 });
 ]]></content>
     <tabTrigger>newclass4cocos</tabTrigger>

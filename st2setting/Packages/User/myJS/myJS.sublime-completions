@@ -61,6 +61,7 @@
         // f
         // g
         { "trigger": "getWinSize()", "contents": "getWinSize();$0" },
+        { "trigger": "getFrameSize()", "contents": "${1:cc.}view.getFrameSize();$0" },
         { "trigger": "getChildren()", "contents": "getChildren();$0" },
         { "trigger": "getRunningScene()", "contents": "director.getRunningScene();$0" },
         { "trigger": "getBoundingBox()", "contents": "getBoundingBox();$0" },
@@ -69,7 +70,7 @@
         { "trigger": "getName()", "contents": "getName();$0" },
         { "trigger": "getContentSize()", "contents": "getContentSize();$0" },
         // i
-        { "trigger": "instanceof()", "contents": "instanceof(${1:object});$0" },
+        { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
         { "trigger": "isNaN()", "contents": "isNaN(${1:number});$0" },
         // j
@@ -116,6 +117,12 @@
         { "trigger": "super()", "contents": "_super(${1:args});$0" },
         { "trigger": "str_charAt()", "contents": "charAt(${1:index});$0" },
         { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len});$0" },
+        { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
+        { "trigger": "setFontSize()", "contents": "setFontSize(${1:num});$0" },
+        { "trigger": "setTextHorizontalAlignment()", "contents": "setTextHorizontalAlignment(${1:cc.TEXT_ALIGNMENT_LEFT});$0" },
+        { "trigger": "setTextVerticalAlignment()", "contents": "setTextVerticalAlignment(${1:cc.VERTICAL_TEXT_ALIGNMENT_TOP});$0" },
+        { "trigger": "setTitleText()", "contents": "setTitleText(${1:str});$0" },
+        { "trigger": "setZOrder()", "contents": "setZOrder(${1:index});$0" },
 
         // t
         { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
