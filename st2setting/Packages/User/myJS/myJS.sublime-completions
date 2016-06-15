@@ -56,6 +56,12 @@
         { "trigger": "cc_error()", "contents": "cc.error(${1:msg});$0" },
         { "trigger": "cc_color()", "contents": "cc.color(${1:255}, ${2:255}, ${3:255}${4:, 255})${0}" },
         { "trigger": "cc_hexToColor()", "contents": "cc.hexToColor(\"${1:hex}\")${0}" },
+        { "trigger": "convertToNodeSpace()_转为模型坐标", "contents": "convertToNodeSpace(${1:point})${0}" },
+        { "trigger": "convertToNodeSpaceAR()", "contents": "convertToNodeSpaceAR(${1:point})${0}" },
+        { "trigger": "convertTouchToNodeSpace()", "contents": "convertTouchToNodeSpace(${1:touch})${0}" },
+        { "trigger": "convertTouchToNodeSpaceAR()", "contents": "convertTouchToNodeSpaceAR(${1:point})${0}" },
+        { "trigger": "convertToWorldSpace()_转为世界坐标", "contents": "convertToWorldSpace(${1:point})${0}" },
+        { "trigger": "convertToWorldSpaceAR()", "contents": "convertToWorldSpaceAR(${1:point})${0}" },
         // d
         // e
         // f
