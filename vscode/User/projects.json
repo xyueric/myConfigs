@@ -1,7 +1,7 @@
 [
 	{
 		"label": "zmxywz",
-		"description": "e:\\Working\\CocosWorkspace\\zmxywz\\client\\zmxywz"
+		"description": "d:\\Working\\CocosWorkspace\\zmxywz\\client\\zmxywz"
 	},
     {
         "label": "st_setting",
@@ -9,18 +9,18 @@
     },
     {
         "label": "js-tests",
-		"description": "e:\\Working\\CocosWorkspace\\js-tests"
+		"description": "d:\\Working\\CocosWorkspace\\js-tests"
     },
     {
         "label": "my-test",
-		"description": "e:\\Working\\CocosWorkspace\\myTest"
+		"description": "d:\\Working\\CocosWorkspace\\myTest"
     },
     {
         "label": "interface",
-		"description": "e:\\Working\\temp\\interface"
+		"description": "d:\\Working\\temp\\interface"
     },
     {
         "label": "blog",
-		"description": "e:\\Svngit\\github_blog"
+		"description": "d:\\Svngit\\github_blog"
     }
 ]
