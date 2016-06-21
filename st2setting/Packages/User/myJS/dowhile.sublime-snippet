@@ -2,7 +2,11 @@
 	<content><![CDATA[do
 {
 	${0://enter_code}
+<<<<<<< HEAD
 }while(${1:true})]]></content>
+=======
+}while(${1:true});]]></content>
+>>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
 	<tabTrigger>dowhile</tabTrigger>
 	<scope>source.js</scope>
 	<description>dowhile</description>

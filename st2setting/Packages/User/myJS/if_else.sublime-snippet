@@ -1,5 +1,6 @@
 <snippet>
     <content><![CDATA[if (${1:true}) {
+<<<<<<< HEAD
     ${2:$TM_SELECTED_TEXT}
 } else {
     ${0:$TM_SELECTED_TEXT}
@@ -7,4 +8,13 @@
     <tabTrigger>ife</tabTrigger>
     <scope>source.js</scope>
     <description>if_else</description>
+=======
+    ${0:$TM_SELECTED_TEXT}
+} else {
+
+};]]></content>
+    <tabTrigger>ife</tabTrigger>
+    <scope>source.js</scope>
+    <description>if … else</description>
+>>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
 </snippet>

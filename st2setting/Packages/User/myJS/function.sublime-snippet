@@ -1,6 +1,11 @@
 <snippet>
+<<<<<<< HEAD
     <content><![CDATA[function(${1:argument}) {${2:$TM_SELECTED_TEXT}}${0:;}]]></content>
     <tabTrigger>func</tabTrigger>
+=======
+    <content><![CDATA[function(${1:argument}) {${0:$TM_SELECTED_TEXT}};]]></content>
+    <tabTrigger>fun</tabTrigger>
+>>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
     <scope>source.js</scope>
     <description>匿名函数</description>
 </snippet>

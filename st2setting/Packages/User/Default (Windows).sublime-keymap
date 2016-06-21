@@ -1,5 +1,6 @@
 [
    // { "keys": ["ctrl+alt+f"], "command": "reindent" },
+<<<<<<< HEAD
    { "keys": ["ctrl+alt+f"], "command": "js_format", "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}] },
    { "keys": ["ctrl+alt+n"], "command": "sublime_tmpl", "args": {"type": "as"} },
    { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case"},
@@ -9,6 +10,33 @@
    { "keys": ["ctrl+="], "command": "js_format" },
    { "keys": ["ctrl+-"], "command": "js_format" },
    { "keys": ["ctrl+keypad_plus"], "command": "js_format" },
+=======
+   {
+      "keys": ["ctrl+alt+f"],
+      "command": "js_format",
+      "context": [{
+         "key": "selector",
+         "operator": "equal",
+         "operand": "source.js,source.json"
+      }]
+   }, {
+      "keys": ["ctrl+alt+n"],
+      "command": "sublime_tmpl",
+      "args": {
+         "type": "as"
+      }
+   }, {
+      "keys": ["ctrl+k", "ctrl+t"],
+      "command": "title_case"
+   }, {
+      "keys": ["ctrl+shift+v"],
+      "command": "clipboard_manager_choose_and_paste"
+   },
+   { "keys": ["ctrl++"], "command": "js_format" },
+   { "keys": ["ctrl+="], "command": "js_format" },
+   { "keys": ["ctrl+keypad_plus"], "command": "js_format" },
+   { "keys": ["ctrl+-"], "command": "js_format" },
+>>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
    { "keys": ["ctrl+keypad_minus"], "command": "js_format" },
 
    { "keys": ["ctrl+equals"], "command": "js_format" },
