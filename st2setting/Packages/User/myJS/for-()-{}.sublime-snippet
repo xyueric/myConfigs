@@ -1,11 +1,7 @@
 <snippet>
     <content><![CDATA[for (var ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {
     $0
-<<<<<<< HEAD
 }]]></content>
-=======
-};]]></content>
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
     <tabTrigger>for</tabTrigger>
     <scope>source.js</scope>
     <description>for(...)</description>

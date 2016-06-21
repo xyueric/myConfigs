@@ -5,7 +5,6 @@
  * ${1:class_name}
  * ${4:[class description]}
  */
-<<<<<<< HEAD
 var ${1:class_name} = function () {
     this.ctor();
 };
@@ -17,37 +16,4 @@ ${1:class_name}.ctor = function() {
     <tabTrigger>newclass</tabTrigger>
     <scope>source.js</scope>
     <description>class</description>
-=======
-${1:class_name} = cc.Class.extend({
-    
-
-    ctor: function(${3:args}) {
-        // this._super(${3:args});
-        this.initFoo();
-
-    },
-
-    /**
-     * 初始化
-     */
-    initFoo: function (${3:args}) {
-        // this._super(${3:args});
-        ${0}
-    },
-
-    /**
-     * 销毁
-     */
-    destroy: function() {
-        // this._super();
-
-    },
-
-
-});
-]]></content>
-    <tabTrigger>newclass</tabTrigger>
-    <scope>source.js</scope>
-    <description>new_class</description>
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
 </snippet>

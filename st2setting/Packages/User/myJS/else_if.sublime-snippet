@@ -1,11 +1,7 @@
 <snippet>
     <content><![CDATA[ else if (${1:true}) {
     ${0:$TM_SELECTED_TEXT}
-<<<<<<< HEAD
 }]]></content>
-=======
-};]]></content>
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
     <tabTrigger>else_if</tabTrigger>
     <scope>source.js</scope>
     <description>else_if</description>

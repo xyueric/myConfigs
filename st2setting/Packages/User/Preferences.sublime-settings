@@ -1,21 +1,12 @@
 {
-<<<<<<< HEAD
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
-=======
-	"auto_complete_commit_on_tab": true,
-	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - Spaceblack/Color Schemes/Spaceblack-Monokai.tmTheme",
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
+	"color_scheme": "Packages/User/Twilight.tmTheme",
 	"default_line_ending": "unix",
 	"draw_minimap_border": true,
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
-<<<<<<< HEAD
 	"fade_fold_buttons": false,
-=======
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
 	"find_selected_text": true,
 	"font_face": "Ubuntu Mono",
 	"font_size": 11,
@@ -30,7 +21,6 @@
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
-<<<<<<< HEAD
 		100
 	],
 	"scroll_speed": 3.0,
@@ -42,15 +32,6 @@
 	"tab_size": 4,
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
-=======
-	],
-	"scroll_speed": 3.0,
-	"show_full_path": false,
-	"show_tab_close_buttons": false,
-	"tab_size": 4,
-	"theme": "Spaceblack.sublime-theme",
-	"translate_tabs_to_spaces": false,
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
 	"trim_automatic_white_space": true,
 	"word_wrap": true
 }

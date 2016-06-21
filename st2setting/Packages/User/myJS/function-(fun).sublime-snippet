@@ -1,5 +1,4 @@
 <snippet>
-<<<<<<< HEAD
     <content><![CDATA[// ${3:description}
 _${1:foo}: function(${2:arguments}) {
 	${0:}
@@ -7,15 +6,4 @@ _${1:foo}: function(${2:arguments}) {
     <tabTrigger>funcocos</tabTrigger>
     <scope>source.js</scope>
     <description>插入函数,cocos继承</description>
-=======
-    <content><![CDATA[/**
- * ${3:description}
- */
- ${1:function_name}: function (${2:argument}) {
-	${0:// body...}
-},]]></content>
-    <tabTrigger>func</tabTrigger>
-    <scope>source.js</scope>
-    <description>插入函数</description>
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
 </snippet>

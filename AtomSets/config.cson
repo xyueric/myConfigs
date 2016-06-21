@@ -17,10 +17,6 @@
     disabledPackages: [
       "language-javascript-jsx"
       "activate-power-mode"
-<<<<<<< HEAD
-=======
-      "docblockr"
->>>>>>> 12ae0866265cedd6ad59c584439d61c469dee6d9
       "background-tips"
       "bookmarks"
       "javascript-snippets"
