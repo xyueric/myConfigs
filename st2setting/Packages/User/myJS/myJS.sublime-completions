@@ -75,6 +75,7 @@
         { "trigger": "getVirtualRendererSize()", "contents": "getVirtualRendererSize();$0" },
         { "trigger": "getName()", "contents": "getName();$0" },
         { "trigger": "getContentSize()", "contents": "getContentSize();$0" },
+        { "trigger": "getString()", "contents": "getString();$0" },
         // i
         { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },

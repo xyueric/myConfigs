@@ -23,5 +23,7 @@
          { "key": "setting.tab_completion", "operator": "equal", "operand": true }
       ]
    },
+   { "keys": ["ctrl+alt+p"], "command": "prompt_select_project" },
+
    {}
 ]
