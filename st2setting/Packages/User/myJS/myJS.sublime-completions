@@ -49,7 +49,7 @@
         // b
         { "trigger": "bind()", "contents": "bind(${1:this});$0" },
         // c
-        { "trigger": "cc_log()", "contents": "cc.log(\"${1:string}\", ${2:msg});$0" },
+        { "trigger": "cc_log()", "contents": "cc.log(\"---------\", ${2:msg});$0" },
         { "trigger": "console_log()", "contents": "console.log(${1:msg});$0" },
         { "trigger": "trace()", "contents": "cc.log(${1:msg});$0" },
         { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
@@ -99,7 +99,9 @@
         { "trigger": "param@", "contents": "@param    {${1:string}}   ${2:param_name}    ${2:description}" },
         // q
         // r
+        { "trigger": "removeChild()", "contents": "removeChild(${1:child});$0" },
         { "trigger": "removeFromParent()", "contents": "removeFromParent(${1:true});$0" },
+        { "trigger": "removeAllChildren()", "contents": "removeAllChildren(${1:true});$0" },
         // s
         { "trigger": "setPosition()", "contents": "setPosition(${1:x}, ${2:y});$0" },
         { "trigger": "setPositionX()", "contents": "setPositionX(${1:value});$0" },
