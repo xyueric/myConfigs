@@ -11,12 +11,12 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shif+down",
+        "key": "ctrl+shift+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shif+up",
+        "key": "ctrl+shift+up",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus"
     },

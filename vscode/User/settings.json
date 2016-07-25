@@ -5,8 +5,9 @@
     "files.autoSaveDelay": 100,
     "projectManager.codePath": "d:\\Program Files (x86)\\Microsoft VS Code\\Bin\\Code.cmd",
     "projectManager.openInNewWindow": false,
-    "editor.wrappingColumn": 90,
-    // "editor.fontSize": 15,
+    "editor.wrappingColumn": 0,
+    "editor.fontFamily": "mononoki, 'Courier New', monospace",
+    "editor.fontSize": 15,
     "editor.rulers": [
         90
     ],

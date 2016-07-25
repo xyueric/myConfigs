@@ -23,6 +23,7 @@
 	[
 		100
 	],
+	"save_on_focus_lost": true,
 	"scroll_speed": 3.0,
 	"show_encoding": true,
 	"show_full_path": false,
@@ -33,6 +34,5 @@
 	"theme": "Soda Dark 3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"save_on_focus_lost": true,
 	"word_wrap": true
 }

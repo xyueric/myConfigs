@@ -4,8 +4,12 @@
 		"description": "d:\\Working\\CocosWorkspace\\zmxywz\\client\\zmxywz"
 	},
     {
-        "label": "st_setting",
+        "label": "config_sublime",
 		"description": "d:\\Program Files\\Sublime Text\\Data\\Packages\\User"
+    },
+    {
+        "label": "config_vscode",
+		"description": "C:\\Users\\Eric\\AppData\\Roaming\\Code\\User"      
     },
     {
         "label": "js-tests",
@@ -14,10 +18,6 @@
     {
         "label": "my-test",
 		"description": "d:\\Working\\CocosWorkspace\\myTest"      
-    },
-    {
-        "label": "interface",
-		"description": "D:\\Working\\CocosWorkspace\\zmxywz\\client\\zmxywz\\interface"
     },
     {
         "label": "blog",

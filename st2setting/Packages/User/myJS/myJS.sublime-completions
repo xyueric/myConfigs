@@ -29,22 +29,26 @@
 
         //---------------------------------------
         // a
-        { "trigger": "addChild()", "contents": "addChild(${1:display});$0" },
-        { "trigger": "attr()", "contents": "attr(${1:object});$0" },
 
         { "trigger": "arr_push()", "contents": "push(${1:item});$0" },
         { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
-        { "trigger": "arr_splice()删除元素，并向数组添加新元素。", "contents": "splice(${1:startIndex}, ${2:deleteCount});$0" },
-        { "trigger": "arr_slice() 从已有的数组中返回选定的元素", "contents": "slice(${1:start}, ${2:end});$0" },
+        { "trigger": "arr_splice()删除并add。", "contents": "splice(${1:startIndex}, ${2:deleteCount});$0" },
+        { "trigger": "arr_slice()返回区间元素", "contents": "slice(${1:start}, ${2:end});$0" },
         { "trigger": "arr_indexOf()查找", "contents": "indexOf(${1:object});$0" },
-        { "trigger": "arr_pop()_删除并返回数组的最后一个元素", "contents": "pop();$0" },
-        { "trigger": "arr_shift()删除并返回数组的第一个元素", "contents": "shift();$0" },
+        { "trigger": "arr_pop()_删除并返回last", "contents": "pop();$0" },
+        { "trigger": "arr_shift()删除并返回first", "contents": "shift();$0" },
         { "trigger": "arr_sortOn()", "contents": "sortOn([${1:key}], [${2:Array.NUMERIC}]);$0" },
+        { "trigger": "arr_forEach()", "contents": "forEach(function(element, index, array) {\n    ${1:// body}\n}, this);$0" },
+        { "trigger": "arr_every()", "contents": "every(function(element, index, array) {    \n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
+        { "trigger": "arr_some()", "contents": "some(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
+        { "trigger": "arr_filter()", "contents": "filter(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
         { "trigger": "arr_数值（非字符串）排序", "contents": "Array.NUMERIC" },
         { "trigger": "arr_降序", "contents": "Array.DESCENDING" },
         { "trigger": "arr_不区分大小写", "contents": "Array.CASEINSENSITIVE" },
         { "trigger": "arr_唯一排序", "contents": "Array.UNIQUESORT" },
         { "trigger": "arr_返回的数组包含数组索引", "contents": "Array.RETURNINDEXEDARRAY" },
+        { "trigger": "addChild()", "contents": "addChild(${1:display});$0" },
+        { "trigger": "attr()", "contents": "attr(${1:object});$0" },
         { "trigger": "addTouchEventListener()", "contents": "addTouchEventListener(${1:callback}, ${2:this});" },
         // b
         { "trigger": "bind()", "contents": "bind(${1:this});$0" },
@@ -94,6 +98,7 @@
         // n
         // o
         // p
+        { "trigger": "pushBackCustomItem()", "contents": "pushBackCustomItem(${1:item});$0" },
         { "trigger": "parseInt()", "contents": "parseInt(${1:string});$0" },
         { "trigger": "parseFloat()", "contents": "parseFloat(${1:string});$0" },
         { "trigger": "param@", "contents": "@param    {${1:string}}   ${2:param_name}    ${2:description}" },
@@ -102,6 +107,7 @@
         { "trigger": "removeChild()", "contents": "removeChild(${1:child});$0" },
         { "trigger": "removeFromParent()", "contents": "removeFromParent(${1:true});$0" },
         { "trigger": "removeAllChildren()", "contents": "removeAllChildren(${1:true});$0" },
+        { "trigger": "removeAllItems()", "contents": "removeAllItems();$0" },
         // s
         { "trigger": "setPosition()", "contents": "setPosition(${1:x}, ${2:y});$0" },
         { "trigger": "setPositionX()", "contents": "setPositionX(${1:value});$0" },
