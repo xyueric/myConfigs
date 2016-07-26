@@ -4,7 +4,7 @@
     "completions":
     [
         //my word
-        "destroy", "progress", "enabled", "example", "result", "disbled",
+        "destroy", "progress", "enabled", "Enabled", "example", "result", "disbled", "Disbled",
         // { "trigger": "target_name", "contents": "target.name;" },
 
         //---------------------------------------
