@@ -32,6 +32,7 @@
 
         { "trigger": "arr_push()", "contents": "push(${1:item});$0" },
         { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
+        { "trigger": "arr_join()", "contents": "join(\"${1:key}\");$0" },
         { "trigger": "arr_splice()删除并add。", "contents": "splice(${1:startIndex}, ${2:deleteCount});$0" },
         { "trigger": "arr_slice()返回区间元素", "contents": "slice(${1:start}, ${2:end});$0" },
         { "trigger": "arr_indexOf()查找", "contents": "indexOf(${1:object});$0" },
@@ -133,6 +134,8 @@
         { "trigger": "super()", "contents": "_super(${1:args});$0" },
         { "trigger": "str_charAt()", "contents": "charAt(${1:index});$0" },
         { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len});$0" },
+        { "trigger": "str_concat()", "contents": "concat(${1:item});$0" },
+        { "trigger": "str_split()", "contents": "split(\"${1:key}\");$0" },
         { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
         { "trigger": "setFontSize()", "contents": "setFontSize(${1:num});$0" },
         { "trigger": "setTextHorizontalAlignment()", "contents": "setTextHorizontalAlignment(${1:cc.TEXT_ALIGNMENT_LEFT});$0" },
