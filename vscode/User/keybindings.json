@@ -21,6 +21,10 @@
         "when": "editorTextFocus"
     },
     {
+        "key": "ctrl+r",
+        "command": "toggleExperimentalScreenReaderSupport"
+    },
+    {
         "key": "ctrl+shift+r",
         "command": "workbench.action.gotoSymbol"
     },

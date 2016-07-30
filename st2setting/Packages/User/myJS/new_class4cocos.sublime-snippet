@@ -16,7 +16,7 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     /**
      * 初始化
      */
-    initFoo: function (args) {
+    initFoo: function(args) {
         this._super(args);
         ${0}
     },
