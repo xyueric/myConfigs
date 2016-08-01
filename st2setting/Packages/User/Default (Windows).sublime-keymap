@@ -30,11 +30,19 @@
     { "keys": ["alt+down"], "command": "swap_line_down" },
     { "keys": ["alt+space"], "command": "auto_complete" },
     { "keys": ["alt+space"], "command": "replace_completion_with_auto_complete", "context":
-    [
-        { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
-        { "key": "auto_complete_visible", "operator": "equal", "operand": false },
-        { "key": "setting.tab_completion", "operator": "equal", "operand": true }
-    ]
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": ["shift+space"], "command": "auto_complete" },
+    { "keys": ["shift+space"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
     },
    {}
 ]
