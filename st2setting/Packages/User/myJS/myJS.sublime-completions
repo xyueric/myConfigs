@@ -24,7 +24,7 @@
 
 
         //frameworks
-        "Widget", "ImageView", "CheckBox", "Layout", "LoadingBar", "PageView", "ListView", "ScrollView",
+        "Widget", "ImageView", "CheckBox", "Layout", "LoadingBar", "PageView", "ListView", "ScrollView", "TextField", "LayerColor", "Button",
         "TOUCH_BEGAN", "TOUCH_MOVED", "TOUCH_ENDED", "TOUCH_CANCELED",
 
         //---------------------------------------
@@ -141,6 +141,7 @@
         { "trigger": "setTextHorizontalAlignment()", "contents": "setTextHorizontalAlignment(${1:cc.TEXT_ALIGNMENT_LEFT});$0" },
         { "trigger": "setTextVerticalAlignment()", "contents": "setTextVerticalAlignment(${1:cc.VERTICAL_TEXT_ALIGNMENT_TOP});$0" },
         { "trigger": "setTitleText()", "contents": "setTitleText(${1:str});$0" },
+        { "trigger": "setScale9Enabled()()", "contents": "setScale9Enabled(able)(${1:true});$0" },
         { "trigger": "setZOrder()", "contents": "setZOrder(${1:index});$0" },
 
         // t
