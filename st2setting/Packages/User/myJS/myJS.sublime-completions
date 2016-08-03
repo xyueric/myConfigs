@@ -81,6 +81,7 @@
         { "trigger": "getChildren()", "contents": "getChildren();$0" },
         { "trigger": "getChildrenCount()", "contents": "getChildrenCount();$0" },
         { "trigger": "getChildByName()", "contents": "getChildByName(${1:name});$0" },
+        { "trigger": "getLocalZOrder()", "contents": "getLocalZOrder();$0" },
         // i
         { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
