@@ -90,6 +90,7 @@
         // k
         // l,
         { "trigger": "loadTexture()", "contents": "loadTexture(${1:url});$0" },
+        { "trigger": "loadTextures()", "contents": "loadTextures(${1:normal}, ${2:pressed}, ${3:disabled});$0" },
         // m
         { "trigger": "math_max()", "contents": "Math.max(${1:value})" },
         { "trigger": "math_round()", "contents": "Math.round(${1:value})" },
