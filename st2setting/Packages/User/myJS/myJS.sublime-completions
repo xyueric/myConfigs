@@ -82,6 +82,7 @@
         { "trigger": "getChildrenCount()", "contents": "getChildrenCount();$0" },
         { "trigger": "getChildByName()", "contents": "getChildByName(${1:name});$0" },
         { "trigger": "getLocalZOrder()", "contents": "getLocalZOrder();$0" },
+        { "trigger": "getVisible()", "contents": "getVisible();$0" },
         // i
         { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
@@ -113,6 +114,7 @@
         { "trigger": "removeAllChildren()", "contents": "removeAllChildren(${1:true});$0" },
         { "trigger": "removeAllItems()", "contents": "removeAllItems();$0" },
         // s
+        { "trigger": "self()", "contents": "self = this;$0" },
         { "trigger": "setPosition()", "contents": "setPosition(${1:x}, ${2:y});$0" },
         { "trigger": "setPositionX()", "contents": "setPositionX(${1:value});$0" },
         { "trigger": "setPositionY()", "contents": "setPositionY(${1:value});$0" },

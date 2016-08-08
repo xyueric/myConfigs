@@ -44,5 +44,7 @@
             { "key": "setting.tab_completion", "operator": "equal", "operand": true }
         ]
     },
+    { "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+
    {}
 ]
