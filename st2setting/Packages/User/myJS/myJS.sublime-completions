@@ -1,18 +1,10 @@
 {
     "scope":"source.js",
-
     "completions":
     [
         //my word
         "destroy", "progress", "enabled", "Enabled", "example", "result", "disbled", "Disbled",
         // { "trigger": "target_name", "contents": "target.name;" },
-
-        //---------------------------------------
-
-        //project work
-        "director",
-
-
 
         //---------------------------------------
         //key word
@@ -28,8 +20,8 @@
         "TOUCH_BEGAN", "TOUCH_MOVED", "TOUCH_ENDED", "TOUCH_CANCELED",
 
         //---------------------------------------
+        //---------------------------------------
         // a
-
         { "trigger": "arr_push()", "contents": "push(${1:item});$0" },
         { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
         { "trigger": "arr_join()", "contents": "join(\"${1:key}\");$0" },
@@ -46,8 +38,12 @@
         { "trigger": "addChild()", "contents": "addChild(${1:display});$0" },
         { "trigger": "attr()", "contents": "attr(${1:object});$0" },
         { "trigger": "addTouchEventListener()", "contents": "addTouchEventListener(${1:callback}, ${2:this});" },
+
+        //---------------------------------------
         // b
         { "trigger": "bind()", "contents": "bind(${1:this});$0" },
+
+        //---------------------------------------
         // c
         { "trigger": "cc_log()", "contents": "cc.log(\"---------\", ${2:msg});$0" },
         { "trigger": "console_log()", "contents": "console.log(${1:msg});$0" },
@@ -62,9 +58,17 @@
         { "trigger": "convertTouchToNodeSpaceAR()", "contents": "convertTouchToNodeSpaceAR(${1:point})${0}" },
         { "trigger": "convertToWorldSpace()_转为世界坐标", "contents": "convertToWorldSpace(${1:point})${0}" },
         { "trigger": "convertToWorldSpaceAR()", "contents": "convertToWorldSpaceAR(${1:point})${0}" },
+
+        //---------------------------------------
         // d
+
+        //---------------------------------------
         // e
+
+        //---------------------------------------
         // f
+
+        //---------------------------------------
         // g
         { "trigger": "getWinSize()", "contents": "getWinSize();$0" },
         { "trigger": "getFrameSize()", "contents": "${1:cc.}view.getFrameSize();$0" },
@@ -83,15 +87,26 @@
         { "trigger": "getChildByName()", "contents": "getChildByName(${1:name});$0" },
         { "trigger": "getLocalZOrder()", "contents": "getLocalZOrder();$0" },
         { "trigger": "getVisible()", "contents": "getVisible();$0" },
+        
+
+        //---------------------------------------
         // i
         { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
         { "trigger": "isNaN()", "contents": "isNaN(${1:number});$0" },
+
+        //---------------------------------------
         // j
+
+        //---------------------------------------
         // k
+
+        //---------------------------------------
         // l,
         { "trigger": "loadTexture()", "contents": "loadTexture(${1:url});$0" },
         { "trigger": "loadTextures()", "contents": "loadTextures(${1:normal}, ${2:pressed}, ${3:disabled});$0" },
+
+        //---------------------------------------
         // m
         { "trigger": "math_max()", "contents": "Math.max(${1:value})" },
         { "trigger": "math_round()", "contents": "Math.round(${1:value})" },
@@ -99,21 +114,37 @@
         { "trigger": "math_ceil()", "contents": "Math.ceil(${1:value})" },
         { "trigger": "math_random()", "contents": "Math.random() * (${1:max} - ${2:min}) + ${2:min}" },
         { "trigger": "math_round_random()", "contents": "Math.round(Math.random() * (${1:max} - ${2:min}) + ${2:min});" },
+
+        //---------------------------------------
         // n
+
+        //---------------------------------------
         // o
+
+        //---------------------------------------
         // p
         { "trigger": "pushBackCustomItem()", "contents": "pushBackCustomItem(${1:item});$0" },
         { "trigger": "parseInt()", "contents": "parseInt(${1:string});$0" },
         { "trigger": "parseFloat()", "contents": "parseFloat(${1:string});$0" },
         { "trigger": "param@", "contents": "@param    {${1:string}}   ${2:param_name}    ${2:description}" },
         { "trigger": "getPosition()", "contents": "getPosition();$0" },
+
+        //---------------------------------------
         // q
+
+        //---------------------------------------
         // r
         { "trigger": "removeChild()", "contents": "removeChild(${1:child});$0" },
         { "trigger": "removeFromParent()", "contents": "removeFromParent(${1:true});$0" },
         { "trigger": "removeAllChildren()", "contents": "removeAllChildren(${1:true});$0" },
         { "trigger": "removeAllItems()", "contents": "removeAllItems();$0" },
+
+        //---------------------------------------
         // s
+        { "trigger": "str_charAt()", "contents": "charAt(${1:index});$0" },
+        { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len});$0" },
+        { "trigger": "str_concat()", "contents": "concat(${1:item});$0" },
+        { "trigger": "str_split()", "contents": "split(\"${1:key}\");$0" },
         { "trigger": "self()", "contents": "self = this;$0" },
         { "trigger": "setPosition()", "contents": "setPosition(${1:x}, ${2:y});$0" },
         { "trigger": "setPositionX()", "contents": "setPositionX(${1:value});$0" },
@@ -136,29 +167,39 @@
         { "trigger": "setString()", "contents": "setString(${1:num});$0" },
         { "trigger": "setName()", "contents": "setName(${1:string});$0" },
         { "trigger": "super()", "contents": "_super(${1:args});$0" },
-        { "trigger": "str_charAt()", "contents": "charAt(${1:index});$0" },
-        { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len});$0" },
-        { "trigger": "str_concat()", "contents": "concat(${1:item});$0" },
-        { "trigger": "str_split()", "contents": "split(\"${1:key}\");$0" },
         { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
         { "trigger": "setFontSize()", "contents": "setFontSize(${1:num});$0" },
         { "trigger": "setTextHorizontalAlignment()", "contents": "setTextHorizontalAlignment(${1:cc.TEXT_ALIGNMENT_LEFT});$0" },
         { "trigger": "setTextVerticalAlignment()", "contents": "setTextVerticalAlignment(${1:cc.VERTICAL_TEXT_ALIGNMENT_TOP});$0" },
         { "trigger": "setTitleText()", "contents": "setTitleText(${1:str});$0" },
         { "trigger": "setScale9Enabled()()", "contents": "setScale9Enabled(able)(${1:true});$0" },
-        { "trigger": "setZOrder()", "contents": "setZOrder(${1:index});$0" },
+        { "trigger": "setLocalZOrder()", "contents": "setLocalZOrder(${1:index});$0" },
 
+
+        //---------------------------------------
         // t
         { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
         { "trigger": "toFixed()", "contents": "toFixed(${1:2});$0" },
         { "trigger": "this_schedule()", "contents": "this.schedule(${1:callback},  ${2:interval}${3:, repeat}${4:, delay}${5:, key});$0" },
         { "trigger": "this_scheduleOnce()", "contents": "this.scheduleOnce(${1:callback},  ${2:delay}${3:, key});$0" },
         { "trigger": "this_scheduleUpdate()", "contents": "this.scheduleUpdate();$0" },
+
+        //---------------------------------------
         // u
+
+        //---------------------------------------
         // v
+
+        //---------------------------------------
         // w
+
+        //---------------------------------------
         // x
+
+        //---------------------------------------
         // y
+
+        //---------------------------------------
         // z
 
         //---------------------------------------
