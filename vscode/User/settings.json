@@ -7,9 +7,15 @@
     "projectManager.openInNewWindow": false,
     "editor.wrappingColumn": 0,
     "editor.fontFamily": "mononoki, 'Courier New', monospace",
-    "editor.fontSize": 15,
+    "editor.fontSize": 14,
     "editor.rulers": [
         90
     ],
     "editor.wrappingIndent": "indent",
+    // 语言设置
+    "files.associations": {
+        "*.sublime-settings": "json",
+        "*.sublime-completions": "json",
+        "*.sublime-keymap": "json"
+    }
 }
