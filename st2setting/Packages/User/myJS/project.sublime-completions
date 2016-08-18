@@ -3,13 +3,14 @@
     "completions":
     [
         //project work
-        "adventure", "Adventure",
+        "adventure", "Adventure", "rootNode", "listView", 
         
         //project work
-        "director", "initUi", 
+        "director", "initUi",
 
         // ------------------------------------------------
         { "trigger": "onTouchEnded()", "contents": "_onBtn${1:foo_name}TouchEnded$0" },
+        { "trigger": "playSound()", "contents": "getSetManager().playSound(\"click\");\n"},
 
     ]
 }

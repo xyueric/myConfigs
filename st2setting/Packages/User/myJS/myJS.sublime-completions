@@ -163,8 +163,6 @@
         { "trigger": "setCascadeOpacityEnabled()", "contents": "setCascadeOpacityEnabled(${1:true});$0" },
         { "trigger": "setPercent()", "contents": "setPercent(${1:num});$0" },
         { "trigger": "setString()", "contents": "setString(${1:num});$0" },
-        { "trigger": "setString()", "contents": "setString(${1:num});$0" },
-        { "trigger": "setString()", "contents": "setString(${1:num});$0" },
         { "trigger": "setName()", "contents": "setName(${1:string});$0" },
         { "trigger": "super()", "contents": "_super(${1:args});$0" },
         { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
@@ -174,6 +172,7 @@
         { "trigger": "setTitleText()", "contents": "setTitleText(${1:str});$0" },
         { "trigger": "setScale9Enabled()()", "contents": "setScale9Enabled(able)(${1:true});$0" },
         { "trigger": "setLocalZOrder()", "contents": "setLocalZOrder(${1:index});$0" },
+        { "trigger": "setScrollBarEnabled()", "contents": "setScrollBarEnabled(${1:false});$0" },
 
 
         //---------------------------------------
