@@ -8,7 +8,7 @@
 
         //---------------------------------------
         //key word
-        "this", "_super()", "parent", "length", "return", "continue;", "break;", "return", "extend", "prototype", "arguments", "delete",
+        "this", "parent", "length", "return", "continue;", "break;", "return", "extend", "prototype", "arguments", "delete",
         "width", "height", "push", "visible", "scaleX", "scaleY", "rotation",
 
         //type
@@ -121,6 +121,7 @@
 
         //---------------------------------------
         // o
+        { "trigger": "Object.keys()", "contents": "Object.keys(${1:obj});$0" },
 
         //---------------------------------------
         // p
