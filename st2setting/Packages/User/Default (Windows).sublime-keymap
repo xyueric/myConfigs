@@ -1,20 +1,20 @@
 [
     // { "keys": ["ctrl+alt+f"], "command": "reindent" },
-    { "keys": ["ctrl+alt+f"], "command": "js_format", "context": [{"key": "selector", "operator": "equal", "operand": "source.js,source.json"}] },
+    { "keys": ["ctrl+alt+f"], "command": "htmlprettify"},
     { "keys": ["ctrl+alt+n"], "command": "sublime_tmpl", "args": {"type": "as"} },
     { "keys": ["ctrl+k", "ctrl+t"], "command": "title_case"},
     { "keys": ["ctrl+shift+v"], "command": "clipboard_manager_choose_and_paste"},
-    { "keys": ["f9"], "command": "js_format"},
-    { "keys": ["ctrl++"], "command": "js_format" },
-    { "keys": ["ctrl+="], "command": "js_format" },
-    { "keys": ["ctrl+-"], "command": "js_format" },
-    { "keys": ["ctrl+keypad_plus"], "command": "js_format" },
-    { "keys": ["ctrl+keypad_minus"], "command": "js_format" },
+    { "keys": ["f9"], "command": "htmlprettify"},
+    { "keys": ["ctrl++"], "command": "htmlprettify" },
+    { "keys": ["ctrl+="], "command": "htmlprettify" },
+    { "keys": ["ctrl+-"], "command": "htmlprettify" },
+    { "keys": ["ctrl+keypad_plus"], "command": "htmlprettify" },
+    { "keys": ["ctrl+keypad_minus"], "command": "htmlprettify" },
 
-    { "keys": ["ctrl+equals"], "command": "js_format" },
-    { "keys": ["ctrl+shift+equals"], "command": "js_format" },
-    { "keys": ["ctrl+keypad_plus"], "command": "js_format" },
-    { "keys": ["ctrl+shift+keypad_plus"], "command": "js_format" },
+    { "keys": ["ctrl+equals"], "command": "htmlprettify" },
+    { "keys": ["ctrl+shift+equals"], "command": "htmlprettify" },
+    { "keys": ["ctrl+keypad_plus"], "command": "htmlprettify" },
+    { "keys": ["ctrl+shift+keypad_plus"], "command": "htmlprettify" },
     { "keys": ["ctrl+period"], "command": "auto_complete" },
     { "keys": ["ctrl+period"], "command": "replace_completion_with_auto_complete", "context":
         [
@@ -25,7 +25,7 @@
     },
     { "keys": ["ctrl+alt+p"], "command": "prompt_select_project" },
 
-    { "keys": ["ctrl+space"], "command": "js_format" },
+    { "keys": ["ctrl+space"], "command": "htmlprettify" },
     { "keys": ["alt+up"], "command": "swap_line_up" },
     { "keys": ["alt+down"], "command": "swap_line_down" },
     { "keys": ["alt+space"], "command": "auto_complete" },
@@ -45,6 +45,5 @@
         ]
     },
     { "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-
    {}
 ]

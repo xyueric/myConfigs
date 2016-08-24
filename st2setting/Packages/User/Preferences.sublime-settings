@@ -8,8 +8,6 @@
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"find_selected_text": true,
-	"font_face": "Menlo",
-	"font_size": 10.5,
 	"font_face": "Ubuntu Mono",
 	"font_size": 11,
 	"highlight_line": true,
