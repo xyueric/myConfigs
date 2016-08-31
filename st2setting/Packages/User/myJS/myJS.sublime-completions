@@ -169,6 +169,7 @@
         { "trigger": "super()", "contents": "_super(${1:args});$0" },
         { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
         { "trigger": "setFontSize()", "contents": "setFontSize(${1:num});$0" },
+        { "trigger": "setFontName()", "contents": "setFontName(${1:gc.FontName});$0" },
         { "trigger": "setTextHorizontalAlignment()", "contents": "setTextHorizontalAlignment(${1:cc.TEXT_ALIGNMENT_LEFT});$0" },
         { "trigger": "setTextVerticalAlignment()", "contents": "setTextVerticalAlignment(${1:cc.VERTICAL_TEXT_ALIGNMENT_TOP});$0" },
         { "trigger": "setTitleText()", "contents": "setTitleText(${1:str});$0" },
