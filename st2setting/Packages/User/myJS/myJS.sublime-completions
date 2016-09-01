@@ -149,6 +149,7 @@
         { "trigger": "str_split()", "contents": "split(\"${1:key}\");$0" },
         { "trigger": "self()", "contents": "self = this;$0" },
         { "trigger": "setPosition()", "contents": "setPosition(${1:x}, ${2:y});$0" },
+        { "trigger": "setPositionPercent()", "contents": "setPositionPercent(${1:x}, ${2:y});$0" },
         { "trigger": "setPositionX()", "contents": "setPositionX(${1:value});$0" },
         { "trigger": "setPositionY()", "contents": "setPositionY(${1:value});$0" },
         { "trigger": "setRotation()", "contents": "setRotation(${1:value});$0" },
