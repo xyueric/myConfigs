@@ -8,8 +8,9 @@
 var ${1:class_name} = function () {
     this.ctor();
 };
+${1:class_name}.prototype = new BaseUiControl();
 
-${1:class_name}.prototype.ctor = function() {
+${1:class_name}.prototype.ctor = function () {
     ${0:// body...}
 };
 
@@ -18,10 +19,10 @@ ${1:class_name}.prototype.ctor = function() {
 //        
 //--------------------------------------------------------------
 var cur${1:class_name} = null;
-var get${1:class_name} = function() {
+var get${1:class_name} = function () {
     return cur${1:class_name};
 };
-var set${1:class_name} = function(obj) {
+var set${1:class_name} = function (obj) {
     cur${1:class_name} = obj;
 };
 set${1:class_name}(new ${1:class_name}());
