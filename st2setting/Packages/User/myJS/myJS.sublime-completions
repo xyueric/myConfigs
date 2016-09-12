@@ -64,6 +64,8 @@
 
         //---------------------------------------
         // e
+        { "trigger": "enableOutline()", "contents": "enableOutline(cc.hexToColor(\"${1:hex}\"))${0}" },
+        { "trigger": "enableShadow()", "contents": "enableShadow(cc.hexToColor(\"${1:hex}\"))${0}" },
 
         //---------------------------------------
         // f
@@ -177,6 +179,7 @@
         { "trigger": "setScale9Enabled()()", "contents": "setScale9Enabled(able)(${1:true});$0" },
         { "trigger": "setLocalZOrder()", "contents": "setLocalZOrder(${1:index});$0" },
         { "trigger": "setScrollBarEnabled()", "contents": "setScrollBarEnabled(${1:false});$0" },
+        { "trigger": "setVisible()", "contents": "setVisible(${1:false});$0" },
 
 
         //---------------------------------------
