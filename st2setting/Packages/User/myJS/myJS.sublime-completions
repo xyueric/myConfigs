@@ -46,6 +46,7 @@
         //---------------------------------------
         // c
         { "trigger": "cc_log()", "contents": "cc.log(\"---------\", ${2:msg});$0" },
+        { "trigger": "cc_warn()", "contents": "cc.warn(\"---------\", ${2:msg});$0" },
         { "trigger": "console_log()", "contents": "console.log(${1:msg});$0" },
         { "trigger": "trace()", "contents": "cc.log(${1:msg});$0" },
         { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
@@ -97,7 +98,7 @@
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
         { "trigger": "isNaN()", "contents": "isNaN(${1:number});$0" },
 
-        //---------------------------------------
+        //--- ------------------------------------
         // j
 
         //---------------------------------------
