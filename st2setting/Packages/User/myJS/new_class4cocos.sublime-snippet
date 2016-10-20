@@ -6,9 +6,7 @@
  * ${2:[class description]}
  */
 var ${1:class_name} = ${3:cc.Class}.extend({
-    
-
-    ctor: function(args) {
+    ctor: function (args) {
         this._super(${5:view_name});
         
     },
@@ -16,7 +14,7 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     /**
      * 初始化
      */
-    initFoo: function(args) {
+    initFoo: function (args) {
         this._super(args);
         ${0}
     },
@@ -24,7 +22,7 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     /**
      * 初始化 UI
      */
-    initUi: function() {
+    initUi: function () {
         this._super();
         
     },
@@ -32,7 +30,7 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     /**
      * 更新数据
      */
-    updateData: function(args) {
+    updateData: function (args) {
 
     },
 
@@ -42,8 +40,7 @@ var ${1:class_name} = ${3:cc.Class}.extend({
     /**
      * 销毁
      */
-    destroy: function() {
-
+    destroy: function () {
         this._super();
     }
 });
