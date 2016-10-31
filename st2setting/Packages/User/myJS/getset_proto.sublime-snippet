@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[${1:class_name}.prototype.get${2:foo_name} = function() {
+    return ${3:value_name};
+};
+${1:class_name}.prototype.set${2:foo_name} = function(value) {
+    ${3:value_name} = value;
+};]]></content>
+    <tabTrigger>fun_getset_proto</tabTrigger>
+    <scope>source.js</scope>
+    <description>fun_getset_proto</description>
+</snippet>
