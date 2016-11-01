@@ -6,7 +6,7 @@
         "adventure", "Adventure", "rootNode", "listView", 
         
         //project work
-        "director", "initUi",
+        "director", "initUi", "listUpdate",
 
         // ------------------------------------------------
         { "trigger": "onTouchEnded()", "contents": "_onBtn${1:foo_name}TouchEnded$0" },
