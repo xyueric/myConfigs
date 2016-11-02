@@ -164,6 +164,7 @@
         { "trigger": "setAnchorPoint()", "contents": "setAnchorPoint(${1:x}, ${2:y});$0" },
         { "trigger": "setContentSize()", "contents": "setContentSize(${1:x}, ${2:y});$0" },
         { "trigger": "setTexture()", "contents": "setTexture(${1:texture});$0" },
+        { "trigger": "setOpacity()", "contents": "setOpacity(${1:255});$0" },
         { "trigger": "setTouchEnabled()", "contents": "setTouchEnabled(${1:true});$0" },
         { "trigger": "setBright()", "contents": "setBright(${1:true});$0" },
         { "trigger": "setEnabled()", "contents": "setEnabled(${1:true});$0" },

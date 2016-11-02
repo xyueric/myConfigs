@@ -14,6 +14,8 @@
         { "trigger": "MessageLayer()", "contents": "MessageLayer.create(\"${1:title}\");$0"},
         { "trigger": "DialogView_show()", "contents": "DialogView.show([\"${1:title}\", \"${2:message}\", DialogView.${3:TYPE_YES_AND_NO}, function () {\n    ${4}\n}])"},
         { "trigger": "gc_emit_update()", "contents": "gc.mainEmitter.emit(viewConst.EVENT_UPDATE);$0" },
+        { "trigger": "viewMgr_close()", "contents": "viewManager.close(viewConst.${1:VIEW_HERO});$0" },
+        { "trigger": "viewMgr_open()", "contents": "viewManager.open(viewConst.${1:VIEW_HERO});$0" },
 
         // get data manager ------------------------------------------------
         { "trigger": "dataMgr_clearData()", "contents": "getDataManager().clearData()$0" },

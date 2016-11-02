@@ -1,45 +1,32 @@
 <snippet>
     <content><![CDATA[/** 
  * Created by EricHsu
- *
  * ${1:class_name}
  * ${2:[class description]}
  */
 var ${1:class_name} = ${3:cc.Class}.extend({
     ctor: function (${4:args}) {
         this._super(viewConst.${5:view_name});
-        
     },
 
-    /**
-     * 初始化
-     */
+    // 初始化
     initFoo: function (${4:args}) {
         this._super(${4:args});
-        ${0}
     },
     
-    /**
-     * 初始化 UI
-     */
+    // 初始化 UI
     initUi: function () {
         this._super();
-        
+        ${0}        
     },
     
-    /**
-     * 更新数据
-     */
+    // 更新数据
     updateData: function (${4:args}) {
 
     },
+    
 
-
-
-
-    /**
-     * 销毁
-     */
+    // 销毁
     destroy: function () {
         this._super();
     }
