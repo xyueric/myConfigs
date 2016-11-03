@@ -22,23 +22,23 @@
         //---------------------------------------
         //---------------------------------------
         // a
-        { "trigger": "arr_isArray()", "contents": "Array.isArray()(${1:arr});$0" },
-        { "trigger": "arr_push()", "contents": "push(${1:item});$0" },
-        { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
-        { "trigger": "arr_join()", "contents": "join(\"${1:key}\");$0" },
-        { "trigger": "arr_splice()删除并add。", "contents": "splice(${1:startIndex}, ${2:deleteCount});$0" },
-        { "trigger": "arr_slice()返回区间元素", "contents": "slice(${1:start}, ${2:end});$0" },
-        { "trigger": "arr_indexOf()查找", "contents": "indexOf(${1:object});$0" },
-        { "trigger": "arr_pop()_删除并返回last", "contents": "pop();$0" },
-        { "trigger": "arr_shift()删除并返回first", "contents": "shift();$0" },
-        { "trigger": "arr_sort()", "contents": "sort(function (a, b) {\n    return a$1 - b$2;\n});$0" },
-        { "trigger": "arr_forEach()", "contents": "forEach(function(element, index, array) {\n    ${1:// body}\n}, this);$0" },
-        { "trigger": "arr_every()", "contents": "every(function(element, index, array) {    \n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
-        { "trigger": "arr_some()", "contents": "some(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
-        { "trigger": "arr_filter()", "contents": "filter(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
         { "trigger": "addChild()", "contents": "addChild(${1:display});$0" },
-        { "trigger": "attr()", "contents": "attr(${1:object});$0" },
         { "trigger": "addTouchEventListener()", "contents": "addTouchEventListener(${1:callback}, ${2:this});" },
+        { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
+        { "trigger": "arr_every()", "contents": "every(function(element, index, array) {    \n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
+        { "trigger": "arr_filter()", "contents": "filter(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
+        { "trigger": "arr_forEach()", "contents": "forEach(function(element, index, array) {\n    ${1:// body}\n}, this);$0" },
+        { "trigger": "arr_indexOf()查找", "contents": "indexOf(${1:object});$0" },
+        { "trigger": "arr_isArray()", "contents": "Array.isArray()(${1:arr});$0" },
+        { "trigger": "arr_join()", "contents": "join(\"${1:key}\");$0" },
+        { "trigger": "arr_pop()_删除并返回last", "contents": "pop();$0" },
+        { "trigger": "arr_push()", "contents": "push(${1:item});$0" },
+        { "trigger": "arr_shift()删除并返回first", "contents": "shift();$0" },
+        { "trigger": "arr_slice()返回区间元素", "contents": "slice(${1:start}, ${2:end});$0" },
+        { "trigger": "arr_some()", "contents": "some(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
+        { "trigger": "arr_sort()", "contents": "sort(function (a, b) {\n    return a$1 - b$2;\n});$0" },
+        { "trigger": "arr_splice()删除并add。", "contents": "splice(${1:startIndex}, ${2:deleteCount});$0" },
+        { "trigger": "attr()", "contents": "attr(${1:object});$0" },
 
         //---------------------------------------
         // b
@@ -46,20 +46,20 @@
 
         //---------------------------------------
         // c
+        { "trigger": "cc_color()", "contents": "cc.color(${1:255}, ${2:255}, ${3:255}${4:, 255})${0}" },
+        { "trigger": "cc_error()", "contents": "cc.error(${1:msg});$0" },
+        { "trigger": "cc_hexToColor()", "contents": "cc.hexToColor(\"${1:hex}\")${0}" },
         { "trigger": "cc_log()", "contents": "cc.log(\"---------\", ${2:msg});$0" },
         { "trigger": "cc_warn()", "contents": "cc.warn(\"---------\", ${2:msg});$0" },
         { "trigger": "console_log()", "contents": "console.log(${1:msg});$0" },
-        { "trigger": "trace()", "contents": "cc.log(${1:msg});$0" },
-        { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
-        { "trigger": "cc_error()", "contents": "cc.error(${1:msg});$0" },
-        { "trigger": "cc_color()", "contents": "cc.color(${1:255}, ${2:255}, ${3:255}${4:, 255})${0}" },
-        { "trigger": "cc_hexToColor()", "contents": "cc.hexToColor(\"${1:hex}\")${0}" },
         { "trigger": "convertToNodeSpace()_转为模型坐标", "contents": "convertToNodeSpace(${1:point})${0}" },
         { "trigger": "convertToNodeSpaceAR()", "contents": "convertToNodeSpaceAR(${1:point})${0}" },
         { "trigger": "convertTouchToNodeSpace()", "contents": "convertTouchToNodeSpace(${1:touch})${0}" },
         { "trigger": "convertTouchToNodeSpaceAR()", "contents": "convertTouchToNodeSpaceAR(${1:point})${0}" },
         { "trigger": "convertToWorldSpace()_转为世界坐标", "contents": "convertToWorldSpace(${1:point})${0}" },
         { "trigger": "convertToWorldSpaceAR()", "contents": "convertToWorldSpaceAR(${1:point})${0}" },
+        { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
+        { "trigger": "trace()", "contents": "cc.log(${1:msg});$0" },
 
         //---------------------------------------
         // d
@@ -74,29 +74,30 @@
 
         //---------------------------------------
         // g
-        { "trigger": "getWinSize()", "contents": "getWinSize();$0" },
-        { "trigger": "getFrameSize()", "contents": "${1:cc.}view.getFrameSize();$0" },
-        { "trigger": "getRunningScene()", "contents": "director.getRunningScene();$0" },
         { "trigger": "getBoundingBox()", "contents": "getBoundingBox();$0" },
         { "trigger": "getBoundingBoxToWorld()", "contents": "getBoundingBoxToWorld();$0" },
-        { "trigger": "getTouchEnabled()", "contents": "getTouchEnabled();$0" },
-        { "trigger": "getVirtualRendererSize()", "contents": "getVirtualRendererSize();$0" },
-        { "trigger": "getName()", "contents": "getName();$0" },
-        { "trigger": "getTag()", "contents": "getTag();$0" },
-        { "trigger": "getContentSize()", "contents": "getContentSize();$0" },
-        { "trigger": "getString()", "contents": "getString();$0" },
-        { "trigger": "getParent()", "contents": "getParent();$0" },
+        { "trigger": "getChildByName()", "contents": "getChildByName(${1:name});$0" },
         { "trigger": "getChildren()", "contents": "getChildren();$0" },
         { "trigger": "getChildrenCount()", "contents": "getChildrenCount();$0" },
-        { "trigger": "getChildByName()", "contents": "getChildByName(${1:name});$0" },
+        { "trigger": "getContentSize()", "contents": "getContentSize();$0" },
+        { "trigger": "getFrameSize()", "contents": "${1:cc.}view.getFrameSize();$0" },
         { "trigger": "getLocalZOrder()", "contents": "getLocalZOrder();$0" },
+        { "trigger": "getName()", "contents": "getName();$0" },
+        { "trigger": "getParent()", "contents": "getParent();$0" },
+        { "trigger": "getPosition()", "contents": "getPosition();$0" },
+        { "trigger": "getRunningScene()", "contents": "director.getRunningScene();$0" },
+        { "trigger": "getString()", "contents": "getString();$0" },
+        { "trigger": "getTag()", "contents": "getTag();$0" },
+        { "trigger": "getTouchEnabled()", "contents": "getTouchEnabled();$0" },
+        { "trigger": "getVirtualRendererSize()", "contents": "getVirtualRendererSize();$0" },
         { "trigger": "getVisible()", "contents": "getVisible();$0" },
+        { "trigger": "getWinSize()", "contents": "getWinSize();$0" },
         
 
         //---------------------------------------
         // i
-        { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
+        { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "isNaN()", "contents": "isNaN(${1:number});$0" },
 
         //--- ------------------------------------
@@ -113,11 +114,11 @@
 
         //---------------------------------------
         // m
-        { "trigger": "math_max()", "contents": "Math.max(${1:value})" },
-        { "trigger": "math_round()", "contents": "Math.round(${1:value})" },
-        { "trigger": "math_floor()", "contents": "Math.floor(${1:value})" },
         { "trigger": "math_ceil()", "contents": "Math.ceil(${1:value})" },
+        { "trigger": "math_floor()", "contents": "Math.floor(${1:value})" },
+        { "trigger": "math_max()", "contents": "Math.max(${1:value})" },
         { "trigger": "math_random()", "contents": "Math.random() * (${1:max} - ${2:min}) + ${2:min}" },
+        { "trigger": "math_round()", "contents": "Math.round(${1:value})" },
         { "trigger": "math_round_random()", "contents": "Math.round(Math.random() * (${1:max} - ${2:min}) + ${2:min});" },
 
         //---------------------------------------
@@ -129,29 +130,37 @@
 
         //---------------------------------------
         // p
-        { "trigger": "pushBackCustomItem()", "contents": "pushBackCustomItem(${1:item});$0" },
-        { "trigger": "parseInt()", "contents": "parseInt(${1:string});$0" },
-        { "trigger": "parseFloat()", "contents": "parseFloat(${1:string});$0" },
         { "trigger": "param@", "contents": "@param    {${1:string}}   ${2:param_name}    ${2:description}" },
-        { "trigger": "getPosition()", "contents": "getPosition();$0" },
+        { "trigger": "parseFloat()", "contents": "parseFloat(${1:string});$0" },
+        { "trigger": "parseInt()", "contents": "parseInt(${1:string});$0" },
+        { "trigger": "pushBackCustomItem()", "contents": "pushBackCustomItem(${1:item});$0" },
 
         //---------------------------------------
         // q
 
         //---------------------------------------
         // r
-        { "trigger": "removeChild()", "contents": "removeChild(${1:child});$0" },
-        { "trigger": "removeFromParent()", "contents": "removeFromParent(${1:true});$0" },
         { "trigger": "removeAllChildren()", "contents": "removeAllChildren(${1:true});$0" },
         { "trigger": "removeAllItems()", "contents": "removeAllItems();$0" },
+        { "trigger": "removeChild()", "contents": "removeChild(${1:child});$0" },
+        { "trigger": "removeFromParent()", "contents": "removeFromParent(${1:true});$0" },
 
         //---------------------------------------
         // s
-        { "trigger": "str_charAt()", "contents": "charAt(${1:index});$0" },
-        { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len});$0" },
-        { "trigger": "str_concat()", "contents": "concat(${1:item});$0" },
-        { "trigger": "str_split()", "contents": "split(\"${1:key}\");$0" },
+
         { "trigger": "self()", "contents": "self = this;$0" },
+        { "trigger": "setAnchorPoint()", "contents": "setAnchorPoint(${1:x}, ${2:y});$0" },
+        { "trigger": "setBright()", "contents": "setBright(${1:true});$0" },
+        { "trigger": "setCascadeOpacityEnabled()", "contents": "setCascadeOpacityEnabled(${1:true});$0" },
+        { "trigger": "setContentSize()", "contents": "setContentSize(${1:x}, ${2:y});$0" },
+        { "trigger": "setEnabled()", "contents": "setEnabled(${1:true});$0" },
+        { "trigger": "setFontName()", "contents": "setFontName(${1:gc.FontName});$0" },
+        { "trigger": "setFontSize()", "contents": "setFontSize(${1:num});$0" },
+        { "trigger": "setInterval()", "contents": "var ${0:value} = setInterval(${1:fun}, ${2:delay});$0" },
+        { "trigger": "setLocalZOrder()", "contents": "setLocalZOrder(${1:index});$0" },
+        { "trigger": "setName()", "contents": "setName(${1:string});$0" },
+        { "trigger": "setOpacity()", "contents": "setOpacity(${1:255});$0" },
+        { "trigger": "setPercent()", "contents": "setPercent(${1:num});$0" },
         { "trigger": "setPosition()", "contents": "setPosition(${1:x}, ${2:y});$0" },
         { "trigger": "setPositionPercent()", "contents": "setPositionPercent(${1:x}, ${2:y});$0" },
         { "trigger": "setPositionX()", "contents": "setPositionX(${1:value});$0" },
@@ -159,39 +168,30 @@
         { "trigger": "setRotation()", "contents": "setRotation(${1:value});$0" },
         { "trigger": "setRotationX()", "contents": "setRotationX(${1:value});$0" },
         { "trigger": "setRotationY()", "contents": "setRotationY(${1:value});$0" },
-
-        { "trigger": "setInterval()", "contents": "var ${0:value} = setInterval(${1:fun}, ${2:delay});$0" },
-        { "trigger": "setAnchorPoint()", "contents": "setAnchorPoint(${1:x}, ${2:y});$0" },
-        { "trigger": "setContentSize()", "contents": "setContentSize(${1:x}, ${2:y});$0" },
-        { "trigger": "setTexture()", "contents": "setTexture(${1:texture});$0" },
-        { "trigger": "setOpacity()", "contents": "setOpacity(${1:255});$0" },
-        { "trigger": "setTouchEnabled()", "contents": "setTouchEnabled(${1:true});$0" },
-        { "trigger": "setBright()", "contents": "setBright(${1:true});$0" },
-        { "trigger": "setEnabled()", "contents": "setEnabled(${1:true});$0" },
-        { "trigger": "setCascadeOpacityEnabled()", "contents": "setCascadeOpacityEnabled(${1:true});$0" },
-        { "trigger": "setPercent()", "contents": "setPercent(${1:num});$0" },
+        { "trigger": "setScale9Enabled()()", "contents": "setScale9Enabled(able)(${1:true});$0" },
+        { "trigger": "setScrollBarEnabled()", "contents": "setScrollBarEnabled(${1:false});$0" },
         { "trigger": "setString()", "contents": "setString(${1:num});$0" },
-        { "trigger": "setName()", "contents": "setName(${1:string});$0" },
-        { "trigger": "super()", "contents": "_super(${1:args});$0" },
         { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
-        { "trigger": "setFontSize()", "contents": "setFontSize(${1:num});$0" },
-        { "trigger": "setFontName()", "contents": "setFontName(${1:gc.FontName});$0" },
         { "trigger": "setTextHorizontalAlignment()", "contents": "setTextHorizontalAlignment(${1:cc.TEXT_ALIGNMENT_LEFT});$0" },
+        { "trigger": "setTexture()", "contents": "setTexture(${1:texture});$0" },
         { "trigger": "setTextVerticalAlignment()", "contents": "setTextVerticalAlignment(${1:cc.VERTICAL_TEXT_ALIGNMENT_TOP});$0" },
         { "trigger": "setTitleText()", "contents": "setTitleText(${1:str});$0" },
-        { "trigger": "setScale9Enabled()()", "contents": "setScale9Enabled(able)(${1:true});$0" },
-        { "trigger": "setLocalZOrder()", "contents": "setLocalZOrder(${1:index});$0" },
-        { "trigger": "setScrollBarEnabled()", "contents": "setScrollBarEnabled(${1:false});$0" },
+        { "trigger": "setTouchEnabled()", "contents": "setTouchEnabled(${1:true});$0" },
         { "trigger": "setVisible()", "contents": "setVisible(${1:false});$0" },
+        { "trigger": "str_charAt()", "contents": "charAt(${1:index});$0" },
+        { "trigger": "str_concat()", "contents": "concat(${1:item});$0" },
+        { "trigger": "str_split()", "contents": "split(\"${1:key}\");$0" },
+        { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len});$0" },
+        { "trigger": "super()", "contents": "_super(${1:args});$0" },
 
 
         //---------------------------------------
         // t
-        { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
-        { "trigger": "toFixed()", "contents": "toFixed(${1:2});$0" },
         { "trigger": "this_schedule()", "contents": "this.schedule(${1:callback},  ${2:interval}${3:, repeat}${4:, delay}${5:, key});$0" },
         { "trigger": "this_scheduleOnce()", "contents": "this.scheduleOnce(${1:callback},  ${2:delay}${3:, key});$0" },
         { "trigger": "this_scheduleUpdate()", "contents": "this.scheduleUpdate();$0" },
+        { "trigger": "toFixed()", "contents": "toFixed(${1:2});$0" },
+        { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
 
         //---------------------------------------
         // u
