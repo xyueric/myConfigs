@@ -1,8 +1,10 @@
 <snippet>
 	<content><![CDATA[//-----------------------------------------------------------------------------
+//		$1
+//-----------------------------------------------------------------------------
 $0
 ]]></content>
 	<tabTrigger>zs</tabTrigger>
 	<scope>source.js</scope>
-	<description>zsLine1</description>
+	<description>zsLine_长</description>
 </snippet>

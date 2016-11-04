@@ -58,8 +58,8 @@
         { "trigger": "convertTouchToNodeSpaceAR()", "contents": "convertTouchToNodeSpaceAR(${1:point})${0}" },
         { "trigger": "convertToWorldSpace()_转为世界坐标", "contents": "convertToWorldSpace(${1:point})${0}" },
         { "trigger": "convertToWorldSpaceAR()", "contents": "convertToWorldSpaceAR(${1:point})${0}" },
-        { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
-        { "trigger": "trace()", "contents": "cc.log(${1:msg});$0" },
+        { "trigger": "call()", "contents": "call(${1:this});${0}" },
+        { "trigger": "call_proto()", "contents": "${1:class_name}.prototype.${2:foo_name}.call(${3:this}, ${4:arg});${0}" },
 
         //---------------------------------------
         // d
@@ -134,6 +134,7 @@
         { "trigger": "parseFloat()", "contents": "parseFloat(${1:string});$0" },
         { "trigger": "parseInt()", "contents": "parseInt(${1:string});$0" },
         { "trigger": "pushBackCustomItem()", "contents": "pushBackCustomItem(${1:item});$0" },
+        { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
 
         //---------------------------------------
         // q
@@ -192,6 +193,7 @@
         { "trigger": "this_scheduleUpdate()", "contents": "this.scheduleUpdate();$0" },
         { "trigger": "toFixed()", "contents": "toFixed(${1:2});$0" },
         { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
+        { "trigger": "trace()", "contents": "cc.log(${1:msg});$0" },
 
         //---------------------------------------
         // u

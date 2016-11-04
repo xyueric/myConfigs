@@ -19,10 +19,7 @@
 	"margin": 0,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
-	"rulers":
-	[
-		100
-	],
+	"rulers":[],
 	"save_on_focus_lost": true,
 	"scroll_speed": 3.0,
 	"show_encoding": true,

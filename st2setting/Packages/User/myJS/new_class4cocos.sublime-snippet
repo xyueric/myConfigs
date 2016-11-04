@@ -1,8 +1,9 @@
 <snippet>
-    <content><![CDATA[/** 
+    <content><![CDATA[/** ---------------------------------------------------------------------------
  * Created by EricHsu
  * ${1:class_name}
  * ${2:[class description]}
+ * ----------------------------------------------------------------------------
  */
 var ${1:class_name} = ${3:cc.Class}.extend({
     ctor: function (${4:args}) {
