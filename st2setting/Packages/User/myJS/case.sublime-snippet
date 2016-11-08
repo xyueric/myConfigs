@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[case ${1:$flag}:
-	${0}
-	break;]]></content>
-	<tabTrigger>case</tabTrigger>
-	<scope>source.js</scope>
-	<description>case</description>
-</snippet>

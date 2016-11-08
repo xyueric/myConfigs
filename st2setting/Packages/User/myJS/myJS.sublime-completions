@@ -26,7 +26,7 @@
         { "trigger": "addTouchEventListener()", "contents": "addTouchEventListener(${1:callback}, ${2:this});" },
         { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
         { "trigger": "arr_every()", "contents": "every(function(element, index, array) {    \n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
-        { "trigger": "arr_filter()", "contents": "filter(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
+        { "trigger": "arr_filter()", "contents": "filter(function(element, ndex, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
         { "trigger": "arr_forEach()", "contents": "forEach(function(element, index, array) {\n    ${1:// body}\n}, this);$0" },
         { "trigger": "arr_indexOf()查找", "contents": "indexOf(${1:object});$0" },
         { "trigger": "arr_isArray()", "contents": "Array.isArray()(${1:arr});$0" },
@@ -46,6 +46,8 @@
 
         //---------------------------------------
         // c
+        { "trigger": "case()", "contents": "case ${1:$flag}:\n${0}\n    break;" },
+        { "trigger": "cc_async_parallel()", "contents": "cc.async.parallel([\n    function (callback) {\n        $0\n        callback(${1:args});\n    },\n    function (callback) {\n        \n        callback(${1:args});\n    }\n], function (${1:args}) {\n\n});" },
         { "trigger": "cc_color()", "contents": "cc.color(${1:255}, ${2:255}, ${3:255}${4:, 255})${0}" },
         { "trigger": "cc_error()", "contents": "cc.error(${1:msg});$0" },
         { "trigger": "cc_hexToColor()", "contents": "cc.hexToColor(\"${1:hex}\")${0}" },
@@ -169,7 +171,7 @@
         { "trigger": "setRotation()", "contents": "setRotation(${1:value});$0" },
         { "trigger": "setRotationX()", "contents": "setRotationX(${1:value});$0" },
         { "trigger": "setRotationY()", "contents": "setRotationY(${1:value});$0" },
-        { "trigger": "setScale9Enabled()()", "contents": "setScale9Enabled(able)(${1:true});$0" },
+        { "trigger": "setScale9Enabled()", "contents": "setScale9Enabled(${1:true});$0" },
         { "trigger": "setScrollBarEnabled()", "contents": "setScrollBarEnabled(${1:false});$0" },
         { "trigger": "setString()", "contents": "setString(${1:num});$0" },
         { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
