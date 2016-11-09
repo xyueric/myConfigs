@@ -46,7 +46,7 @@
 
         //---------------------------------------
         // c
-        { "trigger": "case()", "contents": "case ${1:$flag}:\n${0}\n    break;" },
+        { "trigger": "case()", "contents": "case ${1:value}:\n${0}\n    break;" },
         { "trigger": "cc_async_parallel()", "contents": "cc.async.parallel([\n    function (callback) {\n        $0\n        callback(${1:args});\n    },\n    function (callback) {\n        \n        callback(${1:args});\n    }\n], function (${1:args}) {\n\n});" },
         { "trigger": "cc_color()", "contents": "cc.color(${1:255}, ${2:255}, ${3:255}${4:, 255})${0}" },
         { "trigger": "cc_error()", "contents": "cc.error(${1:msg});$0" },
