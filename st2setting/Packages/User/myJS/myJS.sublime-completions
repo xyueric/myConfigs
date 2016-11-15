@@ -174,7 +174,7 @@
         { "trigger": "setRotationY()", "contents": "setRotationY(${1:value});$0" },
         { "trigger": "setScale9Enabled()", "contents": "setScale9Enabled(${1:true});$0" },
         { "trigger": "setScrollBarEnabled()", "contents": "setScrollBarEnabled(${1:false});$0" },
-        { "trigger": "setString()", "contents": "setString(${1:num});$0" },
+        { "trigger": "setString()", "contents": "setString(${1:str});$0" },
         { "trigger": "setTextColor()", "contents": "setTextColor(cc.hexToColor(${1:color}));$0" },
         { "trigger": "setTextHorizontalAlignment()", "contents": "setTextHorizontalAlignment(${1:cc.TEXT_ALIGNMENT_LEFT});$0" },
         { "trigger": "setTexture()", "contents": "setTexture(${1:texture});$0" },
