@@ -45,8 +45,8 @@
         ]
     },
     { "keys": ["ctrl+shift+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-    { "keys": ["alt+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
-    { "keys": ["ctrl+shift+f"], "command": "htmlprettify"},
+    // { "keys": ["alt+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    // { "keys": ["ctrl+shift+f"], "command": "htmlprettify"},
     { "keys": ["ctrl+s"], "command": "sort_lines"},
     { "keys": ["f12"], "command": "goto_definition" },
 
