@@ -1,0 +1,26 @@
+<snippet>
+    <content><![CDATA[${1:class_name}.show = function (args) {
+    var node = viewManager.getNodeFromCurrentSceneByName(viewConst.${2:view_name});
+    if (node == null || node === undefined) {
+        node = new ${1:class_name}();
+        viewManager.addNodeToCurrentScene(node, 1002);
+    }
+    node.show(args);
+};
+${1:class_name}.hide = function (args) {
+    var node = viewManager.getNodeFromCurrentSceneByName(viewConst.${2:view_name});
+    if (node == null || node === undefined)
+        return;
+    node.hide();
+};
+${1:class_name}.destroy = function (args) {
+    var node = viewManager.getNodeFromCurrentSceneByName(viewConst.${2:view_name});
+    if (node == null || node === undefined)
+        return;
+    node.destroy();
+};
+]]></content>
+    <tabTrigger>new_single_cocos</tabTrigger>
+    <scope>source.js</scope>
+    <description>new single class 4 cocos</description>
+</snippet>
