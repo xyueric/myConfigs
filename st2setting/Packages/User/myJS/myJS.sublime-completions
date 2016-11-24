@@ -18,6 +18,7 @@
         //frameworks
         "Widget", "ImageView", "CheckBox", "Layout", "LoadingBar", "PageView", "ListView", "ScrollView", "TextField", "LayerColor", "Button",
         "TOUCH_BEGAN", "TOUCH_MOVED", "TOUCH_ENDED", "TOUCH_CANCELED",
+        "DIR_VERTICAL", "DIR_HORIZONTAL",
 
         //---------------------------------------
         //---------------------------------------
