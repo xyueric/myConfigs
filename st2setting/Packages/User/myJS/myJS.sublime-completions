@@ -31,7 +31,7 @@
         { "trigger": "arr_forEach()", "contents": "forEach(function(element, index, array) {\n    ${1:// body}\n}, this);$0" },
         { "trigger": "arr_indexOf()查找", "contents": "indexOf(${1:object});$0" },
         { "trigger": "arr_isArray()", "contents": "Array.isArray()(${1:arr});$0" },
-        { "trigger": "arr_join()", "contents": "join(\"${1:key}\");$0" },
+        { "trigger": "arr_join()连成字符串", "contents": "join(\"${1:key}\");$0" },
         { "trigger": "arr_pop()_删除并返回last", "contents": "pop();$0" },
         { "trigger": "arr_push()", "contents": "push(${1:item});$0" },
         { "trigger": "arr_shift()删除并返回first", "contents": "shift();$0" },
@@ -140,7 +140,7 @@
         { "trigger": "parseFloat()", "contents": "parseFloat(${1:string});$0" },
         { "trigger": "parseInt()", "contents": "parseInt(${1:string});$0" },
         { "trigger": "pushBackCustomItem()", "contents": "pushBackCustomItem(${1:item});$0" },
-        { "trigger": "print()", "contents": "cc.log(${1:msg});$0" },
+        { "trigger": "print()", "contents": "cc.log(\"---------\", ${2:msg});$0" },
 
         //---------------------------------------
         // q
@@ -199,7 +199,7 @@
         { "trigger": "this_scheduleUpdate()", "contents": "this.scheduleUpdate();$0" },
         { "trigger": "toFixed()", "contents": "toFixed(${1:2});$0" },
         { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
-        { "trigger": "trace()", "contents": "cc.log(${1:msg});$0" },
+        { "trigger": "trace()", "contents": "cc.log(\"---------\", ${2:msg});$0" },
 
         //---------------------------------------
         // u
