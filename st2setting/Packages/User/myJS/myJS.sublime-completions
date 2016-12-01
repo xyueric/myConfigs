@@ -28,27 +28,29 @@
         { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
         { "trigger": "arr_every()全为true", "contents": "every(function(element, index, array) {    \n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
         { "trigger": "arr_filter()遍历执行", "contents": "filter(function(element, ndex, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
-        { "trigger": "arr_forEach()", "contents": "forEach(function(element, index, array) {\n    ${1:// body}\n}, this);$0" },
+        { "trigger": "arr_forEach()", "contents": "forEach(function(item, index, array) {\n    ${1:// body}\n}, this);$0" },
         { "trigger": "arr_indexOf()查找", "contents": "indexOf(${1:object});$0" },
         { "trigger": "arr_isArray()", "contents": "Array.isArray()(${1:arr});$0" },
         { "trigger": "arr_join()连成字符串", "contents": "join(\"${1:key}\");$0" },
+        { "trigger": "arr_map()遍历执行", "contents": "var ${1:new_arr} = ${2:old_arr}.map(function(${3:item}){\n    return ${3:item};\n});$0" },
         { "trigger": "arr_pop()_删除并返回last", "contents": "pop();$0" },
         { "trigger": "arr_push()", "contents": "push(${1:item});$0" },
+        { "trigger": "arr_reduce()累加器", "contents": "var ${1:total} = ${2:arr}.reduce(function(item1, item2, index, arr){\n    return ${3:item1 + item2};\n}, 0);$0" },
         { "trigger": "arr_shift()删除并返回first", "contents": "shift();$0" },
         { "trigger": "arr_slice()返回区间元素", "contents": "slice(${1:start}, ${2:end});$0" },
         { "trigger": "arr_some()至少一个为true", "contents": "some(function(element, index, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
         { "trigger": "arr_sort()", "contents": "sort(function (a, b) {\n    return a$1 - b$2;\n});$0" },
-        { "trigger": "arr_splice()删除并add。", "contents": "splice(${1:startIndex}, ${2:deleteCount});$0" },
-        { "trigger": "arr_map()遍历执行", "contents": "var ${1:new_arr} = ${2:old_arr}.map(function(${3:item}){\n    return ${3:item};\n});$0" },
-        { "trigger": "arr_reduce()累加器", "contents": "var ${1:total} = ${2:arr}.reduce(function(item1, item2, index, arr){\n    return ${3:item1 + item2};\n}, 0);$0" },
+        { "trigger": "arr_splice()删除或add。", "contents": "splice(${1:startIndex}, ${2:deleteCount});$0" },
         { "trigger": "attr()", "contents": "attr(${1:object});$0" },
 
-        //---------------------------------------
+        //---------------------------------------   
         // b
         { "trigger": "bind()", "contents": "bind(${1:this});$0" },
 
         //---------------------------------------
         // c
+        { "trigger": "call()", "contents": "call(${1:this});${0}" },
+        { "trigger": "call_proto()", "contents": "${1:class_name}.prototype.${2:foo_name}.call(${3:this}, ${4:arg});${0}" },
         { "trigger": "case()", "contents": "case ${1:value}:\n${0}\n    break;" },
         { "trigger": "cc_async_parallel()", "contents": "cc.async.parallel([\n    function (callback) {\n        $0\n        callback(null, ${1:args});\n    },\n    function (callback) {\n        \n        callback(null, ${1:args});\n    }\n], function (err, results) {\n    if (err) throw err;\n});" },
         { "trigger": "cc_async_series()", "contents": "cc.async.series([\n    function (callback) {\n        $0\n        callback(null, ${1:args});\n    },\n    function (callback) {\n        \n        callback(null, ${1:args});\n    }\n], function (err, results) {\n    if (err) throw err;\n});" },
@@ -64,8 +66,6 @@
         { "trigger": "convertTouchToNodeSpaceAR()", "contents": "convertTouchToNodeSpaceAR(${1:point})${0}" },
         { "trigger": "convertToWorldSpace()_转为世界坐标", "contents": "convertToWorldSpace(${1:point})${0}" },
         { "trigger": "convertToWorldSpaceAR()", "contents": "convertToWorldSpaceAR(${1:point})${0}" },
-        { "trigger": "call()", "contents": "call(${1:this});${0}" },
-        { "trigger": "call_proto()", "contents": "${1:class_name}.prototype.${2:foo_name}.call(${3:this}, ${4:arg});${0}" },
 
         //---------------------------------------
         // d
@@ -111,7 +111,6 @@
 
         //---------------------------------------
         // k
-        { "trigger": "Object.keys()", "contents": "Object.keys(${1:obj});$0" },
 
         //---------------------------------------
         // l,
@@ -198,15 +197,16 @@
         { "trigger": "this_scheduleOnce()", "contents": "this.scheduleOnce(${1:callback},  ${2:delay}${3:, key});$0" },
         { "trigger": "this_scheduleUpdate()", "contents": "this.scheduleUpdate();$0" },
         { "trigger": "toFixed()", "contents": "toFixed(${1:2});$0" },
-        { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
         { "trigger": "trace()", "contents": "cc.log(\"---------\", ${2:msg});$0" },
+        { "trigger": "typeof()", "contents": "typeof ${1:object};$0" },
 
         //---------------------------------------
         // u
 
         //---------------------------------------
         // v
-        { "trigger": "Object.values()", "contents": "Object.values(${1:obj});$0" },
+        { "trigger": "object.keys()", "contents": "Object.keys(${1:obj});$0" },
+        { "trigger": "object.values()", "contents": "Object.values(${1:obj});$0" },
 
         //---------------------------------------
         // w
