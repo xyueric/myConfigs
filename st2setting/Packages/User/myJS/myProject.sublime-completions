@@ -69,6 +69,9 @@
         { "trigger": "dataMgr_setSpirit()", "contents": "getDataManager().setSpirit(${1:value})$0" },
         { "trigger": "dataMgr_setSutra()", "contents": "getDataManager().setSutra(${1:value})$0" },
         { "trigger": "dataMgr_setVip()", "contents": "getDataManager().setVip(${1:vip})$0" },
+        // utils ------------------------------------------------
+        { "trigger": "utils_setButtonEnabled()", "contents": "utils.setButtonEnabled(${1:btn}, ${2:bool}, ${3:enaTxt, disTxt}, ${4:enaColor, enaStrokeColor, disColor, disStrokeColor});$0" },
+        { "trigger": "utils_setButtonStroke()", "contents": "utils.setButtonStroke(${1:btn}, ${2:color}, ${3:size});$0" },
         
     ]
 }
