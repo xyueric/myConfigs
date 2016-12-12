@@ -69,6 +69,13 @@
 
         //---------------------------------------
         // d
+        { "trigger": "date_getFullYear()", "contents": "${1:date}.getFullYear()${0}" },
+        { "trigger": "date_getDate()", "contents": "${1:date}.getDate()${0}" },
+        { "trigger": "date_getMonth()", "contents": "${1:date}.getMonth()${0}" },
+        { "trigger": "date_getHours()", "contents": "${1:date}.getHours()${0}" },
+        { "trigger": "date_getMinutes()", "contents": "${1:date}.getMinutes()${0}" },
+        { "trigger": "date_getSeconds()", "contents": "${1:date}.getSeconds()${0}" },
+        { "trigger": "date_getTime()", "contents": "${1:date}.getTime()${0}" },
 
         //---------------------------------------
         // e

@@ -11,6 +11,7 @@
         { "trigger": "cfg_Common()", "contents": "config.Common.;$0" },
         { "trigger": "DialogView_show()", "contents": "DialogView.show([\"${1:title}\", \"${2:message}\", DialogView.${3:TYPE_YES_AND_NO}, function () {\n    ${4}\n}])"},
         { "trigger": "gc_emit_update()", "contents": "gc.mainEmitter.emit(viewConst.EVENT_UPDATE);$0" },
+        { "trigger": "gc_emit_on()", "contents": "gc.mainEmitter.on(${1:event}, ${2:callback});$0" },
         { "trigger": "MessageLayer()", "contents": "MessageLayer.create(\"${1:title}\");$0"},
         { "trigger": "onTouchEnded()", "contents": "_onBtn${1:foo_name}TouchEnded$0" },
         { "trigger": "playSound()", "contents": "getSetManager().playSound(\"click\");\n$0"},
