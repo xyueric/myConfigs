@@ -61,7 +61,7 @@
         { "trigger": "dataMgr_getUserId()", "contents": "getDataManager().getUserId()$0" },
         { "trigger": "dataMgr_getVip()", "contents": "getDataManager().getVip()$0" },
         { "trigger": "dataMgr_hasItem()", "contents": "getDataManager().hasItem()$0" },
-        { "trigger": "dataMgr_removeItem()", "contents": "getDataManager().removeItem()$0" },
+        { "trigger": "dataMgr_removeItem()", "contents": "getDataManager().removeItem({id:${1:value}, count:${2:value}})$0" },
         { "trigger": "dataMgr_setBookPage()", "contents": "getDataManager().setBookPage(${1:value})$0" },
         { "trigger": "dataMgr_setCurExp()", "contents": "getDataManager().setCurExp(${1:value})$0" },
         { "trigger": "dataMgr_setFixHeartPoint()", "contents": "getDataManager().setFixHeartPoint(${1:value})$0" },

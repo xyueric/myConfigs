@@ -25,6 +25,7 @@
         // a
         { "trigger": "addChild()", "contents": "addChild(${1:display});$0" },
         { "trigger": "addTouchEventListener()", "contents": "addTouchEventListener(${1:callback}, ${2:this});" },
+        { "trigger": "addEventListener()", "contents": "addEventListener(${1:callback}, ${2:this});" },
         { "trigger": "arr_concat()", "contents": "concat(${1:item});$0" },
         { "trigger": "arr_every()全为true", "contents": "every(function(element, index, array) {    \n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
         { "trigger": "arr_filter()遍历执行", "contents": "filter(function(element, ndex, array) {\n    ${1:// body}\n    return ${2:true};\n}, this);$0" },
@@ -93,6 +94,7 @@
         { "trigger": "getChildren()", "contents": "getChildren();$0" },
         { "trigger": "getChildrenCount()", "contents": "getChildrenCount();$0" },
         { "trigger": "getContentSize()", "contents": "getContentSize();$0" },
+        { "trigger": "getCurrentPageIndex()", "contents": "getCurrentPageIndex();$0" },
         { "trigger": "getFrameSize()", "contents": "${1:cc.}view.getFrameSize();$0" },
         { "trigger": "getLocalZOrder()", "contents": "getLocalZOrder();$0" },
         { "trigger": "getName()", "contents": "getName();$0" },
