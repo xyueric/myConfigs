@@ -168,6 +168,7 @@
         { "trigger": "setBright()", "contents": "setBright(${1:true});$0" },
         { "trigger": "setCascadeOpacityEnabled()", "contents": "setCascadeOpacityEnabled(${1:true});$0" },
         { "trigger": "setContentSize()", "contents": "setContentSize(${1:x}, ${2:y});$0" },
+        { "trigger": "setClippingEnabled()", "contents": "setClippingEnabled(${1:false});$0" },
         { "trigger": "setEnabled()", "contents": "setEnabled(${1:true});$0" },
         { "trigger": "setFontName()", "contents": "setFontName(${1:gc.FontName});$0" },
         { "trigger": "setFontSize()", "contents": "setFontSize(${1:num});$0" },
