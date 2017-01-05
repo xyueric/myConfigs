@@ -128,8 +128,8 @@
 
         //---------------------------------------
         // m
-        { "trigger": "math_ceil()", "contents": "Math.ceil(${1:value})" },
-        { "trigger": "math_floor()", "contents": "Math.floor(${1:value})" },
+        { "trigger": "math_ceil()向上取整", "contents": "Math.ceil(${1:value})" },
+        { "trigger": "math_floor()向下取整", "contents": "Math.floor(${1:value})" },
         { "trigger": "math_max()", "contents": "Math.max(${1:value})" },
         { "trigger": "math_random()", "contents": "Math.random() * (${1:max} - ${2:min}) + ${2:min}" },
         { "trigger": "math_round()", "contents": "Math.round(${1:value})" },
@@ -198,6 +198,7 @@
         { "trigger": "str_concat()", "contents": "concat(${1:item});$0" },
         { "trigger": "str_split()", "contents": "split(\"${1:key}\");$0" },
         { "trigger": "str_substr()", "contents": "substr(${1:index}, ${2:len});$0" },
+        { "trigger": "stopAllActions()", "contents": "stopAllActions();$0" },
         { "trigger": "super()", "contents": "_super(${1:args});$0" },
 
 
