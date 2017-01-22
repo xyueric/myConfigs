@@ -114,8 +114,9 @@
         { "trigger": "ignoreContentAdaptWithSize()", "contents": "ignoreContentAdaptWithSize(${1:true});$0" },
         { "trigger": "instanceof()", "contents": "${1:object} instanceof ${2:object}$0" },
         { "trigger": "isNaN()", "contents": "isNaN(${1:number});$0" },
+        { "trigger": "isEmpty()", "contents": "_.isEmpty(${1:obj})$0" },
 
-        //--- ------------------------------------
+        //----------------------------------------
         // j
 
         //---------------------------------------

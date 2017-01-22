@@ -5,15 +5,10 @@
  * ${1:class_name}
  * ${4:[class description]}
  */
-var ${1:class_name} = function () {
-    this.ctor();
-};
+var ${1:class_name} = function () {${2}};
 ${1:class_name}.prototype = new BaseUiControl();
 
-${1:class_name}.prototype.ctor = function () {
-    ${0:// body...}
-};
-
+${0}
 
 //--------------------------------------------------------------
 //        
